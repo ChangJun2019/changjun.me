@@ -7,8 +7,9 @@ export default defineNuxtConfig({
       title: '52chinaweb',
       meta: [
         { name: 'author', content: 'ChangJun' },
-        { name: 'keywords', content: '前端,博客,常峻,Vue,Vue3,Javascript,Typescript' },
-        { name: 'description', content: '一个普普通通的爱折腾的前端' },
+        { name: 'og:title', content: 'ChangJun\'s blog' },
+        { name: 'og:type', content: 'website' },
+        { name: 'og:url', content: 'https://52chinaweb.com/' },
       ],
       link: [
         { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/blog-apple-touch-icon.png' },
@@ -21,6 +22,12 @@ export default defineNuxtConfig({
 
   alias: {
     style: fileURLToPath(new URL('./assets/style', import.meta.url)),
+  },
+
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+    },
   },
 
   extends: ['@nuxt-themes/typography'],

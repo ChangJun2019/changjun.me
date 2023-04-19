@@ -1,5 +1,6 @@
 ---
 title: 2023 My Mac Setup
+description: 2023 My Mac Setup 
 layout: custom-content
 date: 2023-04-01
 duration: 3min
