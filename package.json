@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "HOST=0.0.0.0 nuxt dev --port=5809",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview --port=5809",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.4",
+    "@nuxt-themes/typography": "^0.11.0",
+    "@nuxt/content": "^2.5.2",
+    "@nuxt/devtools": "^0.4.0",
+    "@nuxtjs/color-mode": "^3.2.0",
+    "@types/node": "^18.15.11",
+    "@unocss/nuxt": "^0.51.4",
+    "@unocss/preset-typography": "^0.51.4",
+    "@unocss/preset-wind": "^0.51.4",
+    "@unocss/transformer-directives": "^0.51.4",
+    "@vue-macros/nuxt": "^1.2.8",
+    "@vueuse/core": "^10.0.2",
+    "@vueuse/nuxt": "^10.0.2",
+    "archiver": "^5.3.1",
+    "consola": "^3.0.2",
+    "eslint": "^8.38.0",
+    "nuxt": "^3.4.1",
+    "nuxt-icon": "^0.3.3",
+    "ssh2": "^1.11.0",
+    "typescript": "^5.0.4"
+  }
+}

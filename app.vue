@@ -1,0 +1,3 @@
+<template>
+  <NuxtPage class="max-w-prose min-h-screen px-5 py-2.5 mx-auto box-border " />
+</template>

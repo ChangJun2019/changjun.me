@@ -1,0 +1,10 @@
+
+.dark body{
+  background: #121212;
+  color: #fff;
+}
+
+.dark ::selection {
+  color: #000;
+  background-color: #fd0;
+}
