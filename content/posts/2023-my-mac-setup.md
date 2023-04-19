@@ -4,7 +4,7 @@ layout: custom-content
 date: 2023-04-01
 duration: 3min
 tag: 生活
-cover: https://file.52chinaweb.com/2023/04/2023-my-mac-setup-cover.png
+cover: https://file.52chinaweb.com/2023/04/2023-my-mac-setup-cover-new.png
 ---
 
 
@@ -148,13 +148,13 @@ cover: https://file.52chinaweb.com/2023/04/2023-my-mac-setup-cover.png
 
 ```json
 {
-	"workbench.productIconTheme": "icons-carbon",
-	"workbench.iconTheme": "file-icons",
-	"workbench.colorTheme": "Moonlight II",
-	"editor.fontFamily": "JetBrains Mono, Input Mono, Fira Code, monospace",
-	"editor.fontLigatures": false,
-	"editor.fontSize": 16,
-	"editor.lineHeight": 28,
-	"workbench.sideBar.location": "right"
+  "workbench.productIconTheme": "icons-carbon",
+  "workbench.iconTheme": "file-icons",
+  "workbench.colorTheme": "Moonlight II",
+  "editor.fontFamily": "JetBrains Mono, Input Mono, Fira Code, monospace",
+  "editor.fontLigatures": false,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 28,
+  "workbench.sideBar.location": "right"
 }
 ```

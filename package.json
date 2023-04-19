@@ -26,12 +26,10 @@
     "@vue-macros/nuxt": "^1.2.8",
     "@vueuse/core": "^10.0.2",
     "@vueuse/nuxt": "^10.0.2",
-    "archiver": "^5.3.1",
     "consola": "^3.0.2",
     "eslint": "^8.38.0",
     "nuxt": "^3.4.1",
     "nuxt-icon": "^0.3.3",
-    "ssh2": "^1.11.0",
     "typescript": "^5.0.4"
   }
 }
