@@ -4,7 +4,7 @@
 <template>
   <div class="menus-container text-center m-auto text-left mb-3">
     <article class="flex justify-between border rounded-md p-3 mt-2">
-      <router-link class="nav-icon-btn" to="/blog-list" title="posts">
+      <router-link class="nav-icon-btn" to="/" title="posts">
         <Icon name="carbon:blog" />
       </router-link>
       <a class="nav-icon-btn" href="https://weibo.com/u/5484931522" target="_blank" title="微博">
