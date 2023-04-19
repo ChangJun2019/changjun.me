@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import dayjs from 'dayjs'
+const { $dayjs } = useNuxtApp()
 
 const contentQuery = await (await queryContent('posts').find()).sort((a, b) => {
-  return dayjs(b.date).valueOf() - dayjs(a.date).valueOf()
+  return $dayjs(b.date).valueOf() - $dayjs(a.date).valueOf()
 })
 </script>
 

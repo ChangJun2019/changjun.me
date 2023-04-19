@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { formatTime } from '@/utils'
-
 const { navigation, page, surround, globals } = useContent()
 const { title, date, duration, cover } = unref(page)
 </script>
@@ -11,7 +9,7 @@ const { title, date, duration, cover } = unref(page)
       {{ title }}
     </h1>
     <p class="text-base mt-2 text-gray-500">
-      <span>{{ formatTime(date) }}</span>
+      <span>{{ $dayjs(date).fromNow() }}</span>
       <span class="ml-2 text-gray-400 ml-4">{{ duration }} read</span>
     </p>
     <img :src="cover" alt="" class="mt-4 border border-dark dark:border-white rounded-md w-full h-auto">
