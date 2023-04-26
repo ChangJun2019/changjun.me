@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url'
 export default defineNuxtConfig({
   app: {
     head: {
-      title: '52chinaweb',
+      title: 'Chang Jun',
       meta: [
         { name: 'author', content: 'ChangJun' },
         { name: 'og:title', content: 'ChangJun\'s blog' },
@@ -39,6 +39,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@unocss/nuxt',
     '@vueuse/nuxt',
+    '@vite-pwa/nuxt',
     '@nuxt/devtools',
   ],
 
@@ -72,4 +73,40 @@ export default defineNuxtConfig({
       preload: [],
     },
   },
+
+  pwa: {
+    registerType: 'autoUpdate',
+    manifest: {
+      name: 'Chang Jun Blog',
+      short_name: 'CJBlog',
+      theme_color: '#00dd83',
+      icons: [
+        {
+          src: '/img/pwa-192x192.png',
+          sizes: '192x192',
+          type: 'image/png',
+        },
+        {
+          src: '/img/pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+        },
+        {
+          src: '/img/pwa-512x512.png',
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+      ],
+    },
+    workbox: {
+      navigateFallback: '/',
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
+    },
+    devOptions: {
+      enabled: true,
+      type: 'module',
+    },
+  },
+
 })

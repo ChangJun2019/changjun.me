@@ -3,7 +3,8 @@
     "antfu",
     "Attributify",
     "LXGW",
-    "styl"
+    "styl",
+    "Vite"
   ],
   "prettier.enable": false,
   "editor.codeActionsOnSave": {
