@@ -2,6 +2,12 @@
 import { fileURLToPath } from 'node:url'
 
 export default defineNuxtConfig({
+
+  // https://nuxt.com/docs/getting-started/configuration
+  runtimeConfig: {
+    host: 'https://52chinaweb.com',
+  },
+
   app: {
     head: {
       title: 'Chang Jun',
