@@ -10,7 +10,8 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "dayjs": "^1.11.7"
+    "dayjs": "^1.11.7",
+    "feed": "^4.2.2"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.38.4",
