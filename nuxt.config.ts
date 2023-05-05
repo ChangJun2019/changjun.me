@@ -26,6 +26,10 @@ export default defineNuxtConfig({
     },
   },
 
+  experimental: {
+    payloadExtraction: true,
+  },
+
   alias: {
     style: fileURLToPath(new URL('./assets/style', import.meta.url)),
   },
