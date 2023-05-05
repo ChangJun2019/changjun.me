@@ -65,6 +65,11 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
+  devtools: {
+    // https://github.com/nuxt/devtools/blob/main/packages/devtools-kit/src/_types/module-options.ts
+    enabled: true,
+  },
+
   // https://content.nuxtjs.org/api/configuration
   content: {
 
