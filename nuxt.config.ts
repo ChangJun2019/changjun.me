@@ -52,6 +52,9 @@ export default defineNuxtConfig({
     discoverImages: false,
   },
 
+  // https://github.com/harlan-zw/nuxt-simple-robots/blob/main/src/module.ts
+  robots: {},
+
   modules: [
     '@vue-macros/nuxt',
     '@nuxt/content',
@@ -60,6 +63,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     'nuxt-simple-sitemap',
+    'nuxt-simple-robots',
     '@nuxt/devtools',
   ],
 

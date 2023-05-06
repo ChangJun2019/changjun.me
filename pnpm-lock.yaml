@@ -78,6 +78,9 @@ devDependencies:
   nuxt-icon:
     specifier: ^0.4.0
     version: 0.4.0(rollup@2.79.1)(vue@3.2.47)
+  nuxt-simple-robots:
+    specifier: ^2.3.0
+    version: 2.3.0(rollup@2.79.1)
   nuxt-simple-sitemap:
     specifier: ^2.4.22
     version: 2.4.22(rollup@2.79.1)
@@ -8622,6 +8625,18 @@ packages:
       - rollup
       - supports-color
       - vue
+    dev: true
+
+  /nuxt-simple-robots@2.3.0(rollup@2.79.1):
+    resolution: {integrity: sha512-ZiDPycr/MAhaQ5KxAojCBJA37vzz1jg8yxNRmn1I38sHnYi8DWHIJyJKXYI+jatqgKyFrMhyQnvVTK+SOS0w2A==}
+    dependencies:
+      '@nuxt/kit': 3.4.3(rollup@2.79.1)
+      defu: 6.1.2
+      pathe: 1.1.0
+      ufo: 1.1.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: true
 
   /nuxt-simple-sitemap@2.4.22(rollup@2.79.1):
