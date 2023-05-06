@@ -3,6 +3,8 @@ import { fileURLToPath } from 'node:url'
 
 export default defineNuxtConfig({
 
+  extends: ['@nuxt-themes/typography'],
+
   // https://nuxt.com/docs/getting-started/configuration
   runtimeConfig: {
     // https://github.com/harlan-zw/nuxt-simple-sitemap#set-site-url-required-when-prerendering
@@ -33,6 +35,8 @@ export default defineNuxtConfig({
     payloadExtraction: true,
   },
 
+  debug: false,
+
   alias: {
     style: fileURLToPath(new URL('./assets/style', import.meta.url)),
   },
@@ -47,8 +51,6 @@ export default defineNuxtConfig({
   sitemap: {
     discoverImages: false,
   },
-
-  extends: ['@nuxt-themes/typography'],
 
   modules: [
     '@vue-macros/nuxt',
