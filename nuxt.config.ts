@@ -21,9 +21,9 @@ export default defineNuxtConfig({
         { name: 'og:url', content: 'https://52chinaweb.com/' },
       ],
       link: [
-        { rel: 'apple-touch-icon', sizes: '180x180', href: 'https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/blog-apple-touch-icon.png' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: 'https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/blog-favicon-32x32.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: 'https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/blog-favicon-16x16.png' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/img/blog-apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/blog-favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/img/blog-favicon-16x16.png' },
         { rel: 'stylesheet', href: 'https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.min.css' },
       ],
     },
@@ -39,7 +39,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/rss.xml'],
+      routes: ['/feed.xml'],
     },
   },
 
