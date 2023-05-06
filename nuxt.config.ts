@@ -9,7 +9,6 @@ export default defineNuxtConfig({
     public: {
       siteUrl: 'https://52chinaweb.com',
     },
-    host: 'https://52chinaweb.com',
   },
 
   app: {
