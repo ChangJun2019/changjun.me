@@ -16,8 +16,8 @@
       <a class="nav-icon-btn" href="https://cj-listify.52chinaweb.com" target="_blank" title="微博">
         <Icon name="majesticons:clipboard-list-line" />
       </a>
-      <a class="nav-icon-btn" href="https://juejin.cn/user/1538972008847511/posts" target="_blank" title="掘金">
-        <Icon name="mdi:chart-tree" />
+      <a class="nav-icon-btn" href="https://52chinaweb.com/feed.xml" target="_blank" title="RSS">
+        <Icon name="material-symbols:rss-feed-rounded" />
       </a>
       <button class="nav-icon-btn">
         <ToggleTheme />
