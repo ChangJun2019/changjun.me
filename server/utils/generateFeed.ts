@@ -6,7 +6,9 @@ import MarkdownIt from 'markdown-it'
 import fs from 'fs-extra'
 import { serverQueryContent } from '#content/server'
 
-export default async function generateFeed(event: H3Event) {
+export type FeedType = 'rss' | 'json' | 'atom'
+
+export default async function generateFeed(event: H3Event, type: FeedType = 'rss') {
   const { siteUrl: host } = useRuntimeConfig().public!
 
   const markdown = MarkdownIt({
@@ -15,16 +17,25 @@ export default async function generateFeed(event: H3Event) {
     linkify: true,
   })
 
+  const author = {
+    name: 'Chang Jun',
+    email: '52chinaweb@gmail.com',
+    link: host,
+  }
+
   const feed = new Feed({
     title: 'Chang Jun\'s Blog',
     description: 'Feed of Chang Jun\'s Blog',
     id: host,
     link: host,
-    copyright: 'Chang Jun',
-    author: {
-      name: 'Chang Jun',
-      email: '52chinaweb@gmail.com',
-      link: 'https://52chinaweb.com/',
+    image: `${host}/img/blog-favicon-32x32.png`,
+    favicon: `${host}/img/blog-favicon-32x32.png`,
+    copyright: 'CC BY-NC 4.0. © 2023 Chang Jun. All Rights Reserved.',
+    author,
+    feedLinks: {
+      json: `${host}/feed.json`,
+      atom: `${host}/feed.atom`,
+      rss: `${host}/feed.xml`,
     },
   })
 
@@ -41,6 +52,7 @@ export default async function generateFeed(event: H3Event) {
       }
     }))
   ) as typeof files
+
   docs.forEach((doc) => {
     const _link = `${host}${doc._path}/`
     feed.addItem({
@@ -51,8 +63,14 @@ export default async function generateFeed(event: H3Event) {
       description: doc.description || doc.title,
       date: dayjs(doc.date).toDate(),
       image: doc.cover,
+      author: [author],
     })
   })
+
+  if (type === 'atom')
+    return feed.atom1()
+  if (type === 'json')
+    return feed.json1()
 
   return feed.rss2()
 }
