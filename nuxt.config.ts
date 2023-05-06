@@ -5,6 +5,10 @@ export default defineNuxtConfig({
 
   // https://nuxt.com/docs/getting-started/configuration
   runtimeConfig: {
+    // https://github.com/harlan-zw/nuxt-simple-sitemap#set-site-url-required-when-prerendering
+    public: {
+      siteUrl: 'https://52chinaweb.com',
+    },
     host: 'https://52chinaweb.com',
   },
 
@@ -40,6 +44,11 @@ export default defineNuxtConfig({
     },
   },
 
+  // https://github.com/harlan-zw/nuxt-simple-sitemap/blob/main/src/module.ts
+  sitemap: {
+    discoverImages: false,
+  },
+
   extends: ['@nuxt-themes/typography'],
 
   modules: [
@@ -49,6 +58,7 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@unocss/nuxt',
     '@vueuse/nuxt',
+    'nuxt-simple-sitemap',
     '@nuxt/devtools',
   ],
 

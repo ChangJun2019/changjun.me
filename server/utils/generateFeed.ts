@@ -7,7 +7,7 @@ import fs from 'fs-extra'
 import { serverQueryContent } from '#content/server'
 
 export default async function generateFeed(event: H3Event) {
-  const { host } = useRuntimeConfig()
+  const { siteUrl: host } = useRuntimeConfig().public!
 
   const markdown = MarkdownIt({
     html: true,
