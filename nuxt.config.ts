@@ -20,7 +20,8 @@ export default defineNuxtConfig({
       title: 'Chang Jun',
       meta: [
         { name: 'author', content: 'ChangJun' },
-        { name: 'og:title', content: 'ChangJun\'s blog' },
+        { name: 'description', content: 'ChangJun\'s Blog' },
+        { name: 'og:title', content: 'ChangJun\'s Blog' },
         { name: 'og:type', content: 'website' },
         { name: 'og:url', content: 'https://52chinaweb.com/' },
       ],
