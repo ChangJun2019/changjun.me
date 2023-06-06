@@ -14,6 +14,9 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'zh-Hans',
+      },
       title: 'Chang Jun',
       meta: [
         { name: 'author', content: 'ChangJun' },
