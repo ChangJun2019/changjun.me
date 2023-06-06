@@ -19,9 +19,9 @@
       <a class="nav-icon-btn" href="https://52chinaweb.com/feed.xml" target="_blank" title="RSS">
         <Icon name="material-symbols:rss-feed-rounded" />
       </a>
-      <button class="nav-icon-btn">
+      <!-- <button class="nav-icon-btn">
         <ToggleTheme />
-      </button>
+      </button> -->
     </article>
   </div>
 </template>
