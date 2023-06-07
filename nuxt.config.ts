@@ -30,6 +30,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/blog-favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/img/blog-favicon-16x16.png' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'preload', type: 'text/css', href: 'https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css', as: 'style', onload: 'this.onload=null;this.rel=\'stylesheet\'' },
       ],
     },
   },

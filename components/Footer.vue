@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <footer class="mt-4 text-center font-sans">
+  <footer class="mt-4 text-center">
     <p>
       <a class="hover:text-green-500 hover:underline" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
     </p>

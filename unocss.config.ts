@@ -2,8 +2,8 @@ import {
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetTypography,
   presetUno,
+  presetWebFonts,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -15,16 +15,8 @@ export default defineConfig({
     },
   ],
 
-  presets: [
-    presetUno({}),
-    presetAttributify(),
-    presetIcons({
-      scale: 1.2,
-    }),
-    presetTypography(),
-  ],
-
   theme: {
+
     colors: {
       primary: {
         DEFAULT: '#00dd83',
@@ -45,7 +37,23 @@ export default defineConfig({
     maxWidth: {
       prose: '80ch',
     },
+
   },
+
+  presets: [
+    presetUno({}),
+    presetAttributify(),
+    presetIcons({
+      scale: 1.2,
+    }),
+    presetWebFonts({
+      provider: 'google',
+      fonts: {
+        sans: ['Inter:400,600,800', 'LXGW WenKai Screen'],
+        mono: ['JetBrains Mono:500'],
+      },
+    }),
+  ],
 
   transformers: [
     transformerDirectives(),

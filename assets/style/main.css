@@ -8,3 +8,12 @@
   color: #000;
   background-color: #fd0;
 }
+
+html, body {
+  @apply font-sans
+}
+
+.prose-code code, kbd, samp, pre{
+  @apply font-mono
+}
+
