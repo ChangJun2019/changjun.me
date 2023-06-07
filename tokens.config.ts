@@ -17,6 +17,9 @@ export default defineTheme({
     },
   },
   prose: {
+    a: {
+      fontWeight: 600,
+    },
     code: {
       block: {
         fontSize: '15px',
