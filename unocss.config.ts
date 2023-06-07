@@ -25,13 +25,6 @@ export default defineConfig({
   ],
 
   theme: {
-
-    fontFamily: {
-      sans: ['LXGW WenKai Screen', 'ui-sans-serif', 'system-ui'],
-      serif: ['LXGW WenKai Screen', 'ui-serif', 'Georgia'],
-      mono: ['ui-monospace', 'SFMono-Regular'],
-    },
-
     colors: {
       primary: {
         DEFAULT: '#00dd83',
