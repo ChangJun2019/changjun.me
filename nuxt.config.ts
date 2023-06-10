@@ -32,6 +32,9 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'preload', type: 'text/css', href: 'https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css', as: 'style', onload: 'this.onload=null;this.rel=\'stylesheet\'' },
       ],
+      script: [
+        { 'src': 'https://umami.52chinaweb.com/script.js', 'async': true, 'data-website-id': 'ee1faa71-851b-470b-a5d4-5b11c648ce50' },
+      ],
     },
   },
 
