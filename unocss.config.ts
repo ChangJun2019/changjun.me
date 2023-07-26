@@ -49,7 +49,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: ['Inter:400,600,800', 'LXGW WenKai Screen'],
+        sans: ['Inter:400,600,800', 'LXGW WenKai'],
         mono: ['JetBrains Mono:500'],
       },
     }),

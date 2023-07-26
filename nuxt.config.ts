@@ -26,11 +26,12 @@ export default defineNuxtConfig({
         { name: 'og:url', content: 'https://52chinaweb.com/' },
       ],
       link: [
+        { rel: 'preconnect', href: 'https://192960944.r.cdn36.com', crossorigin: '' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/img/blog-apple-touch-icon.png' },
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/img/blog-favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/img/blog-favicon-16x16.png' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'preload', type: 'text/css', href: 'https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css', as: 'style', onload: 'this.onload=null;this.rel=\'stylesheet\'' },
+        { rel: 'stylesheet', href: 'https://192960944.r.cdn36.com/chinesefonts1/packages/lxgwwenkai/dist/LXGWWenKai-Regular/result.css', as: 'style' },
       ],
       script: [
         { 'src': 'https://umami.52chinaweb.com/script.js', 'async': true, 'data-website-id': 'ee1faa71-851b-470b-a5d4-5b11c648ce50' },
