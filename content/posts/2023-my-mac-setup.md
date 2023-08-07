@@ -3,8 +3,9 @@ title: 2023 My Mac Setup
 description: 2023 My Mac Setup 
 layout: custom-content
 date: 2023-04-01
-duration: 3min
-tag: 生活
+update: 2023-08-07
+category: 科学技术
+tag: 瞎折腾，软件工具
 cover: https://file.52chinaweb.com/2023/04/2023-my-mac-setup-cover-new.png
 ---
 
@@ -42,18 +43,17 @@ cover: https://file.52chinaweb.com/2023/04/2023-my-mac-setup-cover-new.png
 ## App
 
 - [ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
-- [Chrome](https://www.google.com/chrome/) 
-- [Arc](https://arc.net/gift/609d6e6)  
-- [Microsoft Edge Dev](https://www.microsoftedgeinsider.com/en-us/welcome?channel=dev&version=74.1.96.24) 
-- [Safari](https://www.apple.com.cn/safari/)
+- [Arc](https://arc.net/gift/609d6e6) 作为主力浏览器使用，主要原因就是好看（当然仍然会有这样那样的问题）
+- [Chrome](https://www.google.com/chrome/) 在 Arc 遇到问题的时候会打开 Chrome 看一下
+- [Safari](https://www.apple.com.cn/safari/) 看视频的时候我会用 Safari
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [WebStorm](https://www.jetbrains.com/zh-cn/webstorm/)
 - [PyCharm](https://www.jetbrains.com/zh-cn/pycharm/)
-- [Warp](https://www.warp.dev/) 终端
+- [Warp](https://www.warp.dev/) 我主要使用的终端
 - [Raycast](https://www.raycast.com/) 快速启动器
-- [滴答清单](https://dida365.com/about/features)
+- [滴答清单](https://dida365.com/about/features) 我主要使用的任务规划软件，开了会员。
 - [微信开发者工具](https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html)
-- [NetNewsWire](https://netnewswire.com/) 开源的 RSS 阅读器
+- [NetNewsWire](https://netnewswire.com/) 开源的 RSS 阅读器，配合我自己写的 [主题](https://github.com/ChangJun2019/elegant-nnw)，日常浏览。
 - [DevUtils](https://devutils.com/) 开发工具箱
 - [Discord](https://discord.com/)
 - [Spotify](https://open.spotify.com/)
@@ -64,7 +64,7 @@ cover: https://file.52chinaweb.com/2023/04/2023-my-mac-setup-cover-new.png
 - [谜底时钟](https://www.miidii.tech/)
 - 微信
 - Docker
-- [Figma](https://www.figma.com/downloads/)
+- [Figma](https://www.figma.com/downloads/) 还是直接在网页里用比较多
 - [ImageOptim](https://imageoptim.com/mac) 图像压缩工具
 - [Keka](https://www.keka.io/en/) 压缩工具
 - [Microsoft 365](https://www.microsoft.com/zh-cn/microsoft-365)
@@ -82,17 +82,19 @@ cover: https://file.52chinaweb.com/2023/04/2023-my-mac-setup-cover-new.png
 
 ### 浏览器
 
-1. [Chrome](https://www.google.com/chrome/)  日常使用最多的浏览器，主要承担开发的工作。
-2. [Arc](https://arc.net/gift/609d6e6)  超级好看的浏览器，还在体验摸索中。
-3. [Microsoft Edge Dev](https://www.microsoftedgeinsider.com/en-us/welcome?channel=dev&version=74.1.96.24)  New Bing 体验
+1. [Arc](https://arc.net/gift/609d6e6)  目前主要使用的浏览器（尽管会遇到这样那样的问题），真的好看呀。自己简单搞了个 [主页](https://github.com/ChangJun2019/nuxt-arc-home)，还是更喜欢右边窗口有内容的。
+2. [Chrome](https://www.google.com/chrome/)  上面的遇到问题会尝试看看 Chrome 中有没有问题。
+3. [Safari](https://www.apple.com.cn/safari/) 看视频的时候我会用 Safari
 
 ### 浏览器插件
 
-1.  New Tab 是用的自己做的（还未发布...）
-2.  [Language Reactor](https://www.languagereactor.com/) 看 YouTube Netflix 更好的学习语言
-3.  [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm) 广告拦截
-4.  [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) 可以更好的发现 RSS 源
-5.  [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+1.  [Trancy](https://www.trancy.org) 沉浸式语言学习，真的好用。
+2.  [uBlock Origin](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm) 广告拦截
+3.  [RSSHub Radar](https://github.com/DIYgod/RSSHub-Radar) 可以更好的发现 RSS 源
+4.  [Vue.js devtools](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+5.  [Grammarly](https://app.grammarly.com/) 拼写检查
+6.  [Bitwarden](https://bitwarden.com/) 密码管理器
+7.  [File Icons for GitHub and GitLab](https://chrome.google.com/webstore/detail/file-icons-for-github-and/ficfmibkjjnpogdcfhfokmihanoldbfe) 显示文件图标
 
 ## 终端
 
@@ -100,9 +102,9 @@ cover: https://file.52chinaweb.com/2023/04/2023-my-mac-setup-cover-new.png
 
 ### Wrap + oh my zsh
 
-使用 [Wrap](https://www.warp.dev/) 应该也差不多有一年左右了，这个基于 Rust 的终端个人使用体验不错，最近也集成了 AI，可以更好的协助你工作。（尤其是一些不太长用记不住的命令）
+我使用 [Wrap](https://www.warp.dev/) 作为我的 terminal。我应该是最早就开始使用了吧，这个基于 Rust 的 terminal 给我的感觉就是简洁、迅速、便利。
 
-这里推荐一篇文章给想要尝试的同学: [Warp：是时候改变你的命令行工具了](https://sspai.com/post/79262) 
+如果你感兴趣，可以看一下这篇文章: [Warp：是时候改变你的命令行工具了](https://sspai.com/post/79262) 
 
 [oh my zsh](https://github.com/ohmyzsh/ohmyzsh) 默认不开启主题，plugins 开启 git，使用 alias 可以非常好的提升效率！
 
