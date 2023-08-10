@@ -6,8 +6,10 @@
     "linkify",
     "LXGW",
     "styl",
+    "taze",
     "Trancy",
-    "Vite"
+    "Vite",
+    "vitesse"
   ],
   "prettier.enable": false,
   "editor.codeActionsOnSave": {

@@ -99,8 +99,8 @@ export default defineNuxtConfig({
 
     highlight: {
       theme: {
-        dark: 'material-ocean',
-        default: 'material-palenight',
+        dark: 'vitesse-dark',
+        default: 'vitesse-light',
       },
       preload: [],
     },
