@@ -2,7 +2,7 @@
 
 <template>
   <AppLayout>
-    <main class="w-full bg-base max-w-5xl py-4 mx-auto">
+    <main class="w-full bg-base container py-4 px-10 mx-auto">
       <slot />
       <Footer />
     </main>

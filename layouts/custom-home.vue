@@ -1,6 +1,6 @@
 <template>
   <AppLayout>
-    <main class="w-full bg-base max-w-5xl py-4 mx-auto">
+    <main class="w-full bg-base container py-4 mx-auto">
       <slot />
       <Footer />
     </main>

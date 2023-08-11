@@ -25,7 +25,9 @@ export default defineConfig({
     {
       'bg-base': 'bg-$c-bg-base',
       'text-base': 'text-$c-text-base',
+      'text-secondary': 'text-$c-text-secondary',
       'border-base': 'border-$c-border-base',
+      'bg-border': 'bg-$c-border-base',
     },
     {
       'nav-icon-btn': 'border border-0 rounded-md p-2 text-lg leading-4 bg-gray-50 dark:bg-gray-900',
