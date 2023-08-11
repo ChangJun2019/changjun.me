@@ -5,11 +5,13 @@
     "HHKB",
     "linkify",
     "LXGW",
+    "sina",
     "styl",
     "taze",
     "Trancy",
     "Vite",
-    "vitesse"
+    "vitesse",
+    "Weibo"
   ],
   "prettier.enable": false,
   "editor.codeActionsOnSave": {

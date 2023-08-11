@@ -3,8 +3,8 @@ defineRobotMeta()
 </script>
 
 <template>
-  <div class="max-w-prose min-h-screen px-5 py-2.5 mx-auto box-border">
+  <NuxtLayout name="app">
     <NuxtLoadingIndicator />
-    <NuxtPage class="animate-fade-in" />
-  </div>
+    <NuxtPage lass="animate-fade-in" />
+  </NuxtLayout>
 </template>

@@ -7,15 +7,44 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import { fontFamily } from '@unocss/preset-mini/dist/theme'
 
 export default defineConfig({
+  safelist: [
+    'i-carbon-repo-source-code',
+    'i-carbon-blog',
+    'i-carbon-book',
+    'i-carbon-play-outline',
+    'i-carbon-game-console',
+    'i-cib-twitter',
+    'i-cib-sina-weibo',
+    'i-cib-telegram',
+    'i-cib-gmail',
+  ],
   shortcuts: [
+    {
+      'bg-base': 'bg-$c-bg-base',
+      'text-base': 'text-$c-text-base',
+      'border-base': 'border-$c-border-base',
+    },
     {
       'nav-icon-btn': 'border border-0 rounded-md p-2 text-lg leading-4 bg-gray-50 dark:bg-gray-900',
     },
   ],
 
   theme: {
+
+    fontFamily: {
+      sans: [
+        'Inter',
+        'LXGW WenKai',
+        ...fontFamily.sans.split(','),
+      ],
+      mono: [
+        'JetBrainsMono',
+        ...fontFamily.mono.split(','),
+      ],
+    },
 
     colors: {
       primary: {

@@ -15,9 +15,12 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.40.2",
+    "@iconify-json/carbon": "^1.1.19",
+    "@iconify-json/cib": "^1.1.5",
     "@nuxt-themes/typography": "^1.0.1",
     "@nuxt/content": "^2.7.2",
     "@nuxt/devtools": "npm:@nuxt/devtools-edge@latest",
+    "@nuxthq/ui": "^2.7.0",
     "@nuxtjs/color-mode": "^3.3.0",
     "@types/fs-extra": "^11.0.1",
     "@types/markdown-it": "^13.0.0",

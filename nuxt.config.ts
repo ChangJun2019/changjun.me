@@ -65,13 +65,15 @@ export default defineNuxtConfig({
     'nuxt-icon',
     '@unocss/nuxt',
     '@vueuse/nuxt',
+    '@nuxthq/ui',
     'nuxt-simple-sitemap',
     'nuxt-simple-robots',
     '@nuxt/devtools',
   ],
 
   css: [
-    '@/assets/style/main.css',
+    '@/style/var.css',
+    '@/style/global.css',
   ],
 
   // https://vue-macros.sxzz.moe/guide/configurations.html
