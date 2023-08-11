@@ -1,6 +1,5 @@
 ---
 title: Chang Jun
-layout: custom-home
 ---
 
 ## 常常少年 😊
@@ -17,3 +16,4 @@ layout: custom-home
 🌈 「 Life is never easy,but life always finds a way. 」
 
 🌟 希望这里会对你有些许的帮助。
+

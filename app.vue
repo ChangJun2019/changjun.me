@@ -3,8 +3,5 @@ defineRobotMeta()
 </script>
 
 <template>
-  <NuxtLayout name="app">
-    <NuxtLoadingIndicator />
-    <NuxtPage lass="animate-fade-in" />
-  </NuxtLayout>
+  <NuxtPage class="animate-fade-in" />
 </template>
