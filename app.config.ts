@@ -72,19 +72,19 @@ export default defineAppConfig({
     button: {
       color: {
         primary: {
-          ghost: "focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 c-bg-primary c-text-primary shadow hover:c-bg-primary/90"
-        }
-      }
+          ghost: 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 c-bg-primary c-text-primary shadow hover:c-bg-primary/90',
+        },
+      },
     },
 
     slideover: {
-      background: 'bg-base'
+      background: 'bg-base',
     },
 
     card: {
-      background: "bg-base",
-      divide: "divide-y border-base",
-      ring: "ring-1 ring-zinc-200 dark:ring-zinc-800",
-    }
-  }
+      background: 'bg-base',
+      divide: 'divide-y divide-zinc-200 dark:divide-zinc-800',
+      ring: 'ring-1 ring-zinc-200 dark:ring-zinc-800',
+    },
+  },
 })

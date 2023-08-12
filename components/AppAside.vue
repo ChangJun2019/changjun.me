@@ -2,7 +2,7 @@
 const { asidebar } = useAppConfig()
 const navList = computed(() => {
   let r = [] as any
-  asidebar.nav.map(item=> {
+  asidebar.nav.forEach((item) => {
     r = r.concat(item.list)
   })
   return r
@@ -11,7 +11,6 @@ const navList = computed(() => {
 
 <template>
   <aside class="w-full h-4 md:h-screen lg:w-64 sticky top-0 left-0 md:w-16">
-
     <!-- full side -->
     <div class="lg:flex hidden  flex-col w-full h-screen px-5 py-8 overflow-y-auto bg-base text-base border-r border-base transition duration-300 ease-linear">
       <img class="w-12 h-12" :src="asidebar.logo" alt="">
@@ -26,8 +25,6 @@ const navList = computed(() => {
           </div>
         </nav>
       </div>
-
-   
     </div>
 
     <!-- simple side -->
@@ -36,11 +33,9 @@ const navList = computed(() => {
         <img class="w-6 h-6" :src="asidebar.logo" alt="">
 
         <div v-for="(nav, index) in navList" :key="index" class="p-1.5 box-border text-lg cursor-pointer focus:outline-nones transition-colors duration-200 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800">
-          <span class="block" :class="nav.icon"></span>
+          <span class="block" :class="nav.icon" />
         </div>
-
       </nav>
     </div>
-    
   </aside>
 </template>
