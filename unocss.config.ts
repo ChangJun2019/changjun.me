@@ -10,6 +10,19 @@ import {
 import { fontFamily } from '@unocss/preset-mini/dist/theme'
 
 export default defineConfig({
+
+  content: {
+    // https://unocss.dev/guide/extracting#extracting-from-build-tools-pipeline
+    pipeline: {
+      include: [
+        /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
+        // include js/ts files
+        'src/**/*.{js,ts}',
+        'app.config.ts'
+      ]
+    }
+  },
+
   safelist: [
     'i-carbon-repo-source-code',
     'i-carbon-blog',
@@ -24,7 +37,9 @@ export default defineConfig({
   shortcuts: [
     {
       'bg-base': 'bg-$c-bg-base',
+      'c-bg-primary':'bg-$c-bg-primary',
       'text-base': 'text-$c-text-base',
+      'c-text-primary':'text-$c-text-primary',
       'text-secondary': 'text-$c-text-secondary',
       'border-base': 'border-$c-border-base',
       'bg-border': 'bg-$c-border-base',

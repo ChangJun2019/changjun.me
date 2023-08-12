@@ -3,7 +3,7 @@
 
 <template>
   <NuxtLayout>
-    <div class="blog-page flex flex-col px-8 z-122">
+    <div class="blog-page flex flex-col">
       <div class="items-center lg:flex">
         <div class="w-full lg:w-1/2">
           <div class="lg:max-w-lg">

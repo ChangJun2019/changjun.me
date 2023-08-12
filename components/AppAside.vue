@@ -4,7 +4,6 @@ const navList = computed(() => {
   let r = [] as any
   asidebar.nav.map(item=> {
     r = r.concat(item.list)
-    console.log(r)
   })
   return r
 })
@@ -12,7 +11,9 @@ const navList = computed(() => {
 
 <template>
   <aside class="w-full h-4 md:h-screen lg:w-64 sticky top-0 left-0 md:w-16">
-    <div class="lg:block md:hidden flex flex-col w-full h-screen px-5 py-8 overflow-y-auto bg-base text-base border-r border-base transition duration-300 ease-linear">
+
+    <!-- full side -->
+    <div class="lg:flex hidden  flex-col w-full h-screen px-5 py-8 overflow-y-auto bg-base text-base border-r border-base transition duration-300 ease-linear">
       <img class="w-12 h-12" :src="asidebar.logo" alt="">
       <div class="flex flex-col justify-between flex-1 mt-6">
         <nav class="-mx-3 space-y-6 ">
@@ -29,7 +30,8 @@ const navList = computed(() => {
    
     </div>
 
-    <div class="flex flex-col items-center w-16 h-screen py-8 overflow-y-auto bg-base border-base border-r sm:hidden md:flex lg:hidden">
+    <!-- simple side -->
+    <div class="flex-col items-center w-16 h-screen py-8 overflow-y-auto bg-base border-base border-r hidden md:flex lg:hidden">
       <nav class="w-full flex flex-col items-center flex-1 space-y-6">
         <img class="w-6 h-6" :src="asidebar.logo" alt="">
 
