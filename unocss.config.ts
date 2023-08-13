@@ -18,9 +18,9 @@ export default defineConfig({
         /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
         // include js/ts files
         'src/**/*.{js,ts}',
-        'app.config.ts'
-      ]
-    }
+        'app.config.ts',
+      ],
+    },
   },
 
   safelist: [
@@ -33,13 +33,14 @@ export default defineConfig({
     'i-cib-sina-weibo',
     'i-cib-telegram',
     'i-cib-gmail',
+    'animate-bobble',
   ],
   shortcuts: [
     {
       'bg-base': 'bg-$c-bg-base',
-      'c-bg-primary':'bg-$c-bg-primary',
+      'c-bg-primary': 'bg-$c-bg-primary',
       'text-base': 'text-$c-text-base',
-      'c-text-primary':'text-$c-text-primary',
+      'c-text-primary': 'text-$c-text-primary',
       'text-secondary': 'text-$c-text-secondary',
       'border-base': 'border-$c-border-base',
       'bg-border': 'bg-$c-border-base',
@@ -50,7 +51,11 @@ export default defineConfig({
   ],
 
   theme: {
-
+    extend: {
+      animation: {
+        'bobble-sm': 'bobble-sm 3s ease infinite',
+      },
+    },
     fontFamily: {
       sans: [
         'Inter',
