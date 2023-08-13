@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="w-full flex flex-col md:flex-row">
+  <div class="w-full flex flex-col sm:flex-row">
     <AppMenu />
     <AppAside />
     <slot />
