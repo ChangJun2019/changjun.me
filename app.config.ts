@@ -86,5 +86,14 @@ export default defineAppConfig({
       divide: 'divide-y divide-zinc-200 dark:divide-zinc-800',
       ring: 'ring-1 ring-zinc-200 dark:ring-zinc-800',
     },
+
+    tabs: {
+      list: {
+        background: 'c-bg-muted',
+        marker: {
+          background: 'bg-base',
+        },
+      },
+    },
   },
 })

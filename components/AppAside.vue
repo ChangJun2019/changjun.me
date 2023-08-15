@@ -24,7 +24,9 @@ const navList = computed(() => {
             </a>
           </div>
         </nav>
-      </div>9
+      </div>
+
+      <AppSwitchColor />
     </div>
 
     <!-- simple side -->

@@ -39,6 +39,8 @@ export default defineConfig({
     {
       'bg-base': 'bg-$c-bg-base',
       'c-bg-primary': 'bg-$c-bg-primary',
+      'c-bg-muted': 'bg-$c-bg-muted',
+      'c-text-muted': 'bg-$c-text-muted',
       'text-base': 'text-$c-text-base',
       'c-text-primary': 'text-$c-text-primary',
       'text-secondary': 'text-$c-text-secondary',
