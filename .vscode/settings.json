@@ -1,4 +1,25 @@
 {
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": false
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
   "cSpell.words": [
     "antfu",
     "Attributify",
@@ -12,13 +33,5 @@
     "Vite",
     "vitesse",
     "Weibo"
-  ],
-  "prettier.enable": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.formatOnSave": false,
-  "css.validate": false,
-  "less.validate": false,
-  "scss.validate": false
+  ]
 }
