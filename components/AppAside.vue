@@ -38,6 +38,7 @@ const navList = computed(() => {
           <span class="block" :class="nav.icon" />
         </div>
       </nav>
+      <AppSwitchColorSimple />
     </div>
   </aside>
 </template>
