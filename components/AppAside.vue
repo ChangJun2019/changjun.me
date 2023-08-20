@@ -10,7 +10,7 @@ const navList = computed(() => {
 </script>
 
 <template>
-  <aside class="left-0 top-0 hidden sm:fixed sm:block lg:w-64 md:h-screen sm:w-16">
+  <aside class="left-0 top-0 hidden sm:fixed sm:block lg:w-56 md:h-screen sm:w-16">
     <!-- full side -->
     <div class="hidden h-screen w-full flex-col overflow-y-auto border-r border-base bg-base px-5 py-8 text-base transition duration-300 ease-linear lg:flex">
       <img class="h-12 w-12" :src="asidebar.logo" alt="">

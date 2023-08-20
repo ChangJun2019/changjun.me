@@ -1,6 +1,6 @@
 ---
+content: custom-content
 title: To 小常同学
-layout: custom-content
 date: 2021-10-03
 duration: 1min
 tag: 生活

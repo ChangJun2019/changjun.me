@@ -12,6 +12,10 @@ export default defineTheme({
         fontSize: '15px',
       },
     },
+
+    img: {
+      borderRadius: '0.5rem',
+    },
   },
 
   typography: {

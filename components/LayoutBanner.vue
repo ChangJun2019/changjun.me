@@ -7,7 +7,7 @@ const pageType = defineProp<PageType>('type', { default: 'blog', required: true 
 <template>
   <div class="items-center lg:flex">
     <div class="w-full lg:w-1/2">
-      <div class="lg:max-w-lg">
+      <div class="lg:max-w-xl">
         <h1 class="text-3xl font-semibold lg:text-4xl">
           What did I write
         </h1>

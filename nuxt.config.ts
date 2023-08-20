@@ -93,7 +93,9 @@ export default defineNuxtConfig({
   // https://content.nuxtjs.org/api/configuration
   content: {
 
-    documentDriven: true,
+    documentDriven: {
+      layoutFallbacks: ['content'],
+    },
 
     navigation: {
       fields: ['title', 'date', 'duration', 'cover'],

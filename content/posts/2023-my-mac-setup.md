@@ -1,4 +1,5 @@
 ---
+layout: content
 title: 2023 My Mac Setup
 description: 2023 My Mac Setup 
 date: 2023-04-01

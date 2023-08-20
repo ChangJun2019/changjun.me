@@ -1,6 +1,6 @@
 ---
+layout: content
 title: 2021 我的观影记录
-layout: custom-content
 date: 2021-10-03
 duration: 1min
 tag: 生活

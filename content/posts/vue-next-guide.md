@@ -1,6 +1,6 @@
 ---
+layout: content
 title: 了不起的 Vue3
-layout: custom-content
 date: 2021-11-11
 duration: 10min
 tag: Vue

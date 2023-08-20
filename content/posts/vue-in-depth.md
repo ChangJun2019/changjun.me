@@ -1,6 +1,6 @@
 ---
+layout: content
 title: 关于 Vue3
-layout: custom-content
 date: 2021-08-04
 duration: 10min
 tag: 前端

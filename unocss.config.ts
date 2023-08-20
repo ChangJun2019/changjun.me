@@ -87,9 +87,6 @@ export default defineConfig({
         900: '#004532',
       },
     },
-    maxWidth: {
-      prose: '80ch',
-    },
 
   },
 

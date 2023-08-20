@@ -1,6 +1,6 @@
 ---
+layout: content
 title: 2021 我在看的前端优质周刊
-layout: custom-content
 date: 2021-08-08
 duration: 1min
 tag: 前端
