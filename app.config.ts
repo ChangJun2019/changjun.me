@@ -96,5 +96,16 @@ export default defineAppConfig({
         },
       },
     },
+
+    badge: {
+      color: {
+        Switch: {
+          solid: 'bg-Switch',
+        },
+        PS5: {
+          solid: 'bg-PS5',
+        },
+      },
+    },
   },
 })

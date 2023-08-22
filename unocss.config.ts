@@ -53,11 +53,7 @@ export default defineConfig({
   ],
 
   theme: {
-    extend: {
-      animation: {
-        'bobble-sm': 'bobble-sm 3s ease infinite',
-      },
-    },
+
     fontFamily: {
       sans: [
         'Inter',
@@ -71,6 +67,8 @@ export default defineConfig({
     },
 
     colors: {
+      Switch: '#E70012',
+      PS5: '#0070cc',
       primary: {
         DEFAULT: '#00dd83',
       },
