@@ -13,13 +13,13 @@ const navList = computed(() => {
   <aside class="left-0 top-0 hidden sm:fixed sm:block lg:w-56 md:h-screen sm:w-16">
     <!-- full side -->
     <div class="hidden h-screen w-full flex-col overflow-y-auto border-r border-base bg-base px-5 py-8 text-base transition duration-300 ease-linear lg:flex">
-      <img class="h-12 w-12" :src="asidebar.logo" alt="">
+      <img class="h-12 w-12 animate-fade-in-left" :src="asidebar.logo" alt="">
       <div class="mt-6 flex flex-1 flex-col justify-between">
         <nav class="-mx-3 space-y-6">
           <div v-for="(nav, index) in asidebar.nav" :key="index" class="space-y-3">
             <label class="px-3 text-lg font-semibold">{{ nav.label }}</label>
-            <a v-for="item in nav.list" :key="item.route" class="flex transform items-center rounded-lg px-3 py-2 font-medium text-base transition-colors duration-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#">
-              <span class="h-5 w-5 rounded" :class="`${item.icon}`" />
+            <a v-for="item in nav.list" :key="item.route" class="group flex transform items-center rounded-lg px-3 py-2 font-medium text-base transition-colors duration-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#">
+              <span class="h-5 w-5 rounded group-hover:animate-flip-in-y" :class="`${item.icon}`" />
               <span class="mx-2">{{ item.name }}</span>
             </a>
           </div>

@@ -3,5 +3,5 @@ defineRobotMeta()
 </script>
 
 <template>
-  <NuxtPage class="animate-fade-in" />
+  <NuxtPage />
 </template>

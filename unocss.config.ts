@@ -17,30 +17,19 @@ export default defineConfig({
       include: [
         /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
         // include js/ts files
-        'src/**/*.{js,ts}',
+        './**/*.{js,ts}',
         'app.config.ts',
       ],
     },
   },
 
-  safelist: [
-    'i-carbon-repo-source-code',
-    'i-carbon-blog',
-    'i-carbon-book',
-    'i-carbon-play-outline',
-    'i-carbon-game-console',
-    'i-cib-twitter',
-    'i-cib-sina-weibo',
-    'i-cib-telegram',
-    'i-cib-gmail',
-    'animate-bobble',
-  ],
+  safelist: [],
   shortcuts: [
     {
       'bg-base': 'bg-$c-bg-base',
       'c-bg-primary': 'bg-$c-bg-primary',
       'c-bg-muted': 'bg-$c-bg-muted',
-      'c-text-muted': 'bg-$c-text-muted',
+      'c-text-muted': 'text-$c-text-muted',
       'text-base': 'text-$c-text-base',
       'c-text-primary': 'text-$c-text-primary',
       'text-secondary': 'text-$c-text-secondary',

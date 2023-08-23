@@ -2,13 +2,13 @@
 const tabs = ref(0)
 const items = [{
   label: 'system',
-  icon: 'i-heroicons-computer-desktop',
+  icon: 'i-ri-mac-line',
 }, {
   label: 'light',
-  icon: 'i-heroicons-sun',
+  icon: 'i-ri-sun-line',
 }, {
   label: 'dark',
-  icon: 'i-heroicons-moon',
+  icon: 'i-ri-moon-line',
 }]
 
 const colorMode = useColorMode()
@@ -29,5 +29,3 @@ watch(tabs, (val) => {
     </UTabs>
   </div>
 </template>
-
-<style scoped></style>

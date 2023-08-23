@@ -1,5 +1,6 @@
 ---
 title: Chang Jun
+layout: home
 ---
 
 ## 常常少年 😊
