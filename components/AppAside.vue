@@ -18,10 +18,10 @@ const navList = computed(() => {
         <nav class="-mx-3 space-y-6">
           <div v-for="(nav, index) in asidebar.nav" :key="index" class="space-y-3">
             <label class="px-3 text-lg font-semibold">{{ nav.label }}</label>
-            <a v-for="item in nav.list" :key="item.route" class="group flex transform items-center rounded-lg px-3 py-2 font-medium text-base transition-colors duration-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#">
+            <NuxtLink :to="item.route" v-for="item in nav.list" :key="item.route" class="group flex transform items-center rounded-lg px-3 py-2 font-medium text-base transition-colors duration-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#">
               <span class="h-5 w-5 rounded group-hover:animate-flip-in-y" :class="`${item.icon}`" />
               <span class="mx-2">{{ item.name }}</span>
-            </a>
+            </NuxtLink>
           </div>
         </nav>
       </div>
@@ -34,9 +34,9 @@ const navList = computed(() => {
       <nav class="w-full flex flex-1 flex-col items-center space-y-6">
         <img class="h-6 w-6" :src="asidebar.logo" alt="">
 
-        <div v-for="(nav, index) in navList" :key="index" class="focus:outline-nones box-border cursor-pointer rounded-lg p-1.5 text-lg transition-colors duration-200 hover:bg-zinc-100 dark:hover:bg-zinc-800">
+        <NuxtLink :to="nav.route" v-for="(nav, index) in navList" :key="index" class="focus:outline-nones box-border cursor-pointer rounded-lg p-1.5 text-lg transition-colors duration-200 hover:bg-zinc-100 dark:hover:bg-zinc-800">
           <span class="block" :class="nav.icon" />
-        </div>
+        </NuxtLink>
       </nav>
       <AppSwitchColorSimple />
     </div>
