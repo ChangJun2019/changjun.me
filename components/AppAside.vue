@@ -18,7 +18,7 @@ const navList = computed(() => {
         <nav class="-mx-3 space-y-6">
           <div v-for="(nav, index) in asidebar.nav" :key="index" class="space-y-3">
             <label class="px-3 text-lg font-semibold">{{ nav.label }}</label>
-            <NuxtLink :to="item.route" v-for="item in nav.list" :key="item.route" class="group flex transform items-center rounded-lg px-3 py-2 font-medium text-base transition-colors duration-300 hover:bg-zinc-100 dark:hover:bg-zinc-800" href="#">
+            <NuxtLink :to="item.route" v-for="item in nav.list" :key="item.route" class="group flex transform items-center rounded-lg px-3 py-2 font-medium text-base transition-colors duration-300 hover:bg-zinc-100 dark:hover:bg-zinc-800">
               <span class="h-5 w-5 rounded group-hover:animate-flip-in-y" :class="`${item.icon}`" />
               <span class="mx-2">{{ item.name }}</span>
             </NuxtLink>

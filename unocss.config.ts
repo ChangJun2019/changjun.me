@@ -18,7 +18,7 @@ export default defineConfig({
         /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
         // include js/ts files
         'app.config.ts',
-        'constants/*.ts'
+        'constants/*.ts',
       ],
     },
   },
@@ -46,7 +46,6 @@ export default defineConfig({
     fontFamily: {
       sans: [
         'Inter',
-        'LXGW WenKai',
         ...fontFamily.sans.split(','),
       ],
       mono: [
@@ -61,18 +60,6 @@ export default defineConfig({
       primary: {
         DEFAULT: '#00dd83',
       },
-      green: {
-        50: '#e6fff1',
-        100: '#a3ffce',
-        200: '#7affbd',
-        300: '#4ff7a9',
-        400: '#26eb95',
-        500: '#00dd83',
-        600: '#00b874',
-        700: '#009161',
-        800: '#006b4b',
-        900: '#004532',
-      },
     },
 
   },
@@ -86,7 +73,7 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: ['Inter:400,600,800', 'LXGW WenKai'],
+        sans: ['Inter:400,600,800'],
         mono: ['JetBrains Mono:500'],
       },
     }),

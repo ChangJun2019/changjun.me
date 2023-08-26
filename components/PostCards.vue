@@ -7,10 +7,10 @@ const contentQuery = await (await queryContent('posts').find()).sort((a, b) => {
 </script>
 
 <template>
-  <div class="m-auto text-left mb-3">
-    <article class="flex flex-col border rounded-md p-3 mt-2">
+  <div class="m-auto mb-3 text-left">
+    <article class="mt-2 flex flex-col border rounded-md p-3">
       <NuxtLink v-for="(link, index) of contentQuery" :key="link._path" :to="link._path">
-        <p class="h-9 leading-9 hover:text-green-500 hover:font-extrabold">
+        <p class="h-9 leading-9 hover:font-extrabold hover:text-primary">
           {{ index + 1 }}. {{ link.title }}
         </p>
       </NuxtLink>
