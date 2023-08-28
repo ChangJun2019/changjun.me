@@ -34,8 +34,7 @@ export default defineNuxtConfig({
   modules: [
     '@vue-macros/nuxt',
     '@nuxt/content',
-    '@nuxtjs/color-mode',
-    'nuxt-icon',
+    'dayjs-nuxt',
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxthq/ui',
@@ -56,6 +55,12 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'system',
     classSuffix: '',
+  },
+
+  // https://github.com/fumeapp/dayjs
+  dayjs: {
+    plugins: [],
+    defaultTimezone: '',
   },
 
   devtools: {
