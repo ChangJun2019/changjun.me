@@ -1,19 +1,24 @@
 <script setup lang="ts">
+import type { Book } from '@/types/book'
+
+const props = defineProps<{
+  book: Book
+}>()
 </script>
 
 <template>
-  <a href="#" class="block group">
+  <a href="#" class="group block">
     <img
-      src="https://neodb.social/media/item/doubanbook/2023/04/11/2a3959d0-28cd-46b5-95e7-23a98113f1ee.jpg"
+      :src="props.book.cover"
       alt=""
-      class="object-cover w-full rounded aspect-auto"
-    />
+      class="aspect-auto w-full rounded object-cover"
+    >
 
     <div class="mt-3">
       <h3
-        class="text-sm lg:text-base font-medium group-hover:underline group-hover:underline-offset-4 text-center"
+        class="text-center text-sm font-medium lg:text-base group-hover:underline group-hover:underline-offset-4"
       >
-        规则的悖论
+        {{ props.book.name }}
       </h3>
     </div>
   </a>
