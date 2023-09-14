@@ -1,6 +1,5 @@
 import type { H3Event } from 'h3'
 import { Feed } from 'feed'
-import dayjs from 'dayjs'
 import matter from 'gray-matter'
 import MarkdownIt from 'markdown-it'
 import fs from 'fs-extra'
@@ -61,7 +60,7 @@ export default async function generateFeed(event: H3Event, type: FeedType = 'rss
       link: _link,
       content: doc.bodyHtml,
       description: doc.description || doc.title,
-      date: dayjs(doc.date).toDate(),
+      date: doc.date,
       image: doc.cover,
       author: [author],
     })

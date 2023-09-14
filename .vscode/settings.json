@@ -23,6 +23,7 @@
   "cSpell.words": [
     "antfu",
     "Attributify",
+    "directus",
     "HHKB",
     "iconify",
     "linkify",
@@ -40,5 +41,6 @@
     "vitesse",
     "vueuse",
     "Weibo"
-  ]
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }

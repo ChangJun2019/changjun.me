@@ -1,9 +1,5 @@
 <script setup lang="ts">
-const dayjs = useDayjs()
-
-const contentQuery = await (await queryContent('posts').find()).sort((a, b) => {
-  return dayjs(b.date).valueOf() - dayjs(a.date).valueOf()
-})
+const contentQuery = await queryContent('posts').find()
 </script>
 
 <template>

@@ -4,6 +4,10 @@ const props = defineProps<{
   title: string
   cover: string
 }>()
+
+const time = computed(() => {
+  return useDateFormat(props.date, 'YYYY-DD-MM')
+})
 </script>
 
 <template>
@@ -16,7 +20,7 @@ const props = defineProps<{
 
     <div class="bg-base p-4 sm:p-6">
       <div class="text-xs">
-        {{ $dayjs(props.date).format('YYYY-DD-MM') }}
+        {{ time }}
       </div>
 
       <h3 class="mt-0.5 text-lg font-semibold">

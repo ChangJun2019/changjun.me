@@ -9,6 +9,11 @@ export default defineNuxtConfig({
     // https://github.com/harlan-zw/nuxt-simple-sitemap#set-site-url-required-when-prerendering
     public: {
       siteUrl: 'https://52chinaweb.com',
+      directus: {
+        url: '',
+        token: '',
+        devtools: true,
+      },
     },
   },
 
@@ -34,10 +39,10 @@ export default defineNuxtConfig({
   modules: [
     '@vue-macros/nuxt',
     '@nuxt/content',
-    'dayjs-nuxt',
     '@unocss/nuxt',
     '@vueuse/nuxt',
-    '@nuxthq/ui',
+    '@nuxt/ui',
+    'nuxt-directus',
     'nuxt-simple-sitemap',
     'nuxt-simple-robots',
     '@nuxt/devtools',
@@ -55,12 +60,6 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'system',
     classSuffix: '',
-  },
-
-  // https://github.com/fumeapp/dayjs
-  dayjs: {
-    plugins: [],
-    defaultTimezone: '',
   },
 
   devtools: {

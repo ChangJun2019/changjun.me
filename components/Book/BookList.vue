@@ -1,5 +1,17 @@
 <script setup lang="ts">
-const { body: books } = await queryContent('books').where({ title: 'Book' }).only(['body']).findOne()
+import type { Book } from '@/types/book'
+
+const { getItems } = useDirectusItems()
+const {
+  data: books,
+  pending,
+  error,
+  refresh,
+} = await useAsyncData<Book[]>('Books', () =>
+  getItems({
+    collection: 'Books',
+  }),
+)
 </script>
 
 <template>
