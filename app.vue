@@ -1,7 +1,8 @@
 <script lang="ts" setup>
-defineRobotMeta()
 </script>
 
 <template>
-  <NuxtPage />
+  <NuxtLayout>
+    <NuxtPage/>
+  </NuxtLayout>
 </template>

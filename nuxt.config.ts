@@ -17,24 +17,19 @@ export default defineNuxtConfig({
     },
   },
 
-  experimental: {
-    payloadExtraction: true,
+  // https://devtools.nuxt.com/guide/getting-started
+  devtools: { enabled: true },
+
+  devServer: {
+    host: '0.0.0.0',
+    port: 5809,
   },
 
-  debug: false,
   nitro: {
     prerender: {
       routes: ['/feed.xml', '/feed.json', '/feed.atom'],
     },
   },
-
-  // https://github.com/harlan-zw/nuxt-simple-sitemap/blob/main/src/module.ts
-  sitemap: {
-    discoverImages: false,
-  },
-
-  // https://github.com/harlan-zw/nuxt-simple-robots/blob/main/src/module.ts
-  robots: {},
 
   modules: [
     '@vue-macros/nuxt',
@@ -43,8 +38,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/ui',
     'nuxt-directus',
-    'nuxt-simple-sitemap',
-    'nuxt-simple-robots',
     '@nuxt/devtools',
   ],
 
@@ -62,17 +55,12 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
 
-  devtools: {
-    // https://github.com/nuxt/devtools/blob/main/packages/devtools-kit/src/_types/module-options.ts
-    enabled: true,
-  },
-
   // https://content.nuxtjs.org/api/configuration
   content: {
 
-    documentDriven: {
-      layoutFallbacks: ['content'],
-    },
+    // documentDriven: {
+    //   layoutFallbacks: ['content'],
+    // },
 
     navigation: {
       fields: ['title', 'date', 'duration', 'cover'],

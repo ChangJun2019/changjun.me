@@ -26,8 +26,8 @@ useHead({
       <Link rel="icon" type="image/png" sizes="16x16" href="/img/blog-favicon-16x16.png" />
       <Link rel="icon" type="image/x-icon" href="/favicon.ico" />
     </Head>
-    <AppMenu />
-    <AppAside />
+    <!-- <AppMenu /> -->
+    <!-- <LayoutAside /> -->
     <slot />
   </div>
 </template>

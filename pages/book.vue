@@ -2,7 +2,6 @@
 </script>
 
 <template>
-  <NuxtLayout>
     <div class="blog-page flex flex-col px-8">
       <LayoutBanner type="blog" />
 
@@ -12,5 +11,4 @@
       <AppHorizontal />
       <BookList/>
     </div>
-  </NuxtLayout>
 </template>
