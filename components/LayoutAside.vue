@@ -2,13 +2,12 @@
 const { asidebar } = useAppConfig()
 const isOpen = ref(false)
 
-
 const us = {
   width: 'w-48',
-  base: 'relative flex flex-col focus:outline-none'
+  base: 'relative flex flex-col focus:outline-none',
 }
 
-const uc = { body: { padding: ''}, ring: '' }
+const uc = { body: { padding: '' }, ring: '' }
 </script>
 
 <template>
@@ -16,7 +15,7 @@ const uc = { body: { padding: ''}, ring: '' }
 
   <USlideover v-model="isOpen" :ui="us">
     <UCard :ui="uc">
-      <AppAside/>
+      <AppAside />
     </UCard>
   </USlideover>
 </template>

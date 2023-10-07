@@ -3,9 +3,10 @@
 
 <template>
   <AppLayout>
-    <main class="mx-auto w-full bg-base px-6 py-4 sm:container lg:px-10 sm:px-8 lg:pl-66 sm:pl-24">
+    <main class="mx-auto w-full bg-base px-6 py-4 sm:container lg:px-34 sm:px-8">
       <div class="justify-between gap-6 xl:flex">
         <div class="max-w-prose">
+          <AppNav active="Home" />
           <slot />
           <UserCard />
         </div>

@@ -2,9 +2,13 @@
 </script>
 
 <template>
-    <div class="blog-page flex flex-col">
-      <LayoutBanner type="blog" />
-      <AppHorizontal />
-      <PostList />
-    </div>
+  <div>
+    <NuxtLayout>
+      <div class="blog-page flex flex-col">
+        <LayoutBanner type="blog" />
+        <AppHorizontal />
+        <PostList />
+      </div>
+    </NuxtLayout>
+  </div>
 </template>

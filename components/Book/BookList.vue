@@ -10,8 +10,7 @@ const {
 } = await useAsyncData<Book[]>('Books', () =>
   getItems({
     collection: 'Books',
-  }),
-)
+  }))
 </script>
 
 <template>

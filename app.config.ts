@@ -1,6 +1,10 @@
 import { SIDE_BAR } from '@/constants/sidebar'
+import { NAV } from '@/constants/app'
 
 export default defineAppConfig({
+
+  appNav: NAV,
+
   asidebar: {
     logo: '/img/blog-pwa-192x192.png',
     nav: SIDE_BAR,
@@ -8,12 +12,11 @@ export default defineAppConfig({
 
   // https://ui.nuxtlabs.com/getting-started/theming
   ui: {
+
     button: {
-      color: {
-        primary: {
-          solid: 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 c-bg-primary c-text-primary shadow hover:c-bg-primary/90',
-          ghost: 'focus:outline-nones hover:bg-zinc-100 dark:hover:bg-zinc-800',
-        },
+      variant: {
+        solid: 'focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 c-bg-primary c-text-primary shadow hover:c-bg-primary/90',
+        ghost: 'focus:outline-nones hover:bg-zinc-100 dark:hover:bg-zinc-800',
       },
     },
 
@@ -32,17 +35,6 @@ export default defineAppConfig({
         background: 'c-bg-muted',
         marker: {
           background: 'bg-base',
-        },
-      },
-    },
-
-    badge: {
-      color: {
-        Switch: {
-          solid: 'bg-Switch',
-        },
-        PS5: {
-          solid: 'bg-PS5',
         },
       },
     },

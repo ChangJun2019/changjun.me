@@ -3,10 +3,6 @@
   color: #fff;
 }
 
-.dark ::selection {
-  background-color: #fd0;
-}
-
 html, body {
   --at-apply: font-sans;
   background-color: var(--c-bg-base);
