@@ -13,13 +13,13 @@ import { fontFamily } from '@unocss/preset-mini/dist/theme'
 export default defineConfig({
 
   content: {
-    // https://unocss.dev/guide/extracting#extracting-from-build-tools-pipeline
     pipeline: {
       include: [
+        // the default
         /\.(vue|svelte|[jt]sx|mdx?|astro|elm|php|phtml|html)($|\?)/,
         // include js/ts files
         'app.config.ts',
-        'constants/*.ts',
+        'constants/*.{js,ts}',
       ],
     },
   },

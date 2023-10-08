@@ -1,6 +1,7 @@
 import { SIDE_BAR } from '@/constants/sidebar'
 import { NAV } from '@/constants/app'
 
+// @unocss-include
 export default defineAppConfig({
 
   appNav: NAV,
@@ -32,9 +33,9 @@ export default defineAppConfig({
 
     tabs: {
       list: {
-        background: 'c-bg-muted',
+        background: '!c-bg-muted',
         marker: {
-          background: 'bg-base',
+          background: '!bg-base',
         },
       },
     },

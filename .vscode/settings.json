@@ -61,6 +61,5 @@
     "vueuse",
     "Weibo"
   ],
-
   "typescript.tsdk": "node_modules/typescript/lib"
 }
