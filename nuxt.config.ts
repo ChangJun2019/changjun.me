@@ -2,6 +2,11 @@
 
 export default defineNuxtConfig({
 
+  components: [
+    { path: '~/components/Life', pathPrefix: false },
+    { path: '~/components' },
+  ],
+
   extends: ['@nuxt-themes/typography'],
 
   // https://nuxt.com/docs/getting-started/configuration
@@ -10,9 +15,7 @@ export default defineNuxtConfig({
     public: {
       siteUrl: 'https://52chinaweb.com',
       directus: {
-        url: '',
         token: '',
-        devtools: true,
       },
     },
   },
@@ -70,4 +73,5 @@ export default defineNuxtConfig({
       preload: [],
     },
   },
+
 })

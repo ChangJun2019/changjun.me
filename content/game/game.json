@@ -1,13 +1,13 @@
 {
   "body": [
     {
-      "name": "塞尔达传说 王国之泪 ゼルダの伝説 ティアーズ オブ ザ キングダム ",
-      "releaseDate": "2023-05-12",
-      "playTime": "2023-05",
+      "comment": "",
       "cover": "",
-      "platform": "Nintendo Switch",
       "duration": "120h",
-      "comment": ""
+      "name": "塞尔达传说 王国之泪 ゼルダの伝説 ティアーズ オブ ザ キングダム",
+      "platform": "Nintendo Switch",
+      "playTime": "2023-05",
+      "releaseDate": "2023-05-12"
     }
   ]
 }

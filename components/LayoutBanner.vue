@@ -7,12 +7,13 @@ const pageType = defineProp<PageType>('type', { default: 'blog', required: true 
 <template>
   <div class="items-center lg:flex">
     <div class="w-full lg:w-1/2">
-      <div class="lg:max-w-xl">
-        <h1 class="text-3xl font-semibold lg:text-4xl">
-          What did I write
+      <AppNav />
+      <div class="lg:max-w-prose prose mt-8">
+        <h1 class="c-text-base">
+          What do I want to write
         </h1>
         <p class="mt-3 text-secondary">
-          小时候的梦想是成为一名作家，因为他们总是会能表达你想象之外。长大后，越来越不敢表达，因为顾虑太多，所以更缄默。这是一个认识自己的过程，我想试试看能不能写一个新的「我」。
+          技术、生活、读书、我的思考……
         </p>
       </div>
     </div>

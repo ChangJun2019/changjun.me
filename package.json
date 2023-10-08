@@ -40,7 +40,8 @@
     "nuxt": "3.7.4",
     "nuxt-directus": "5.5.0",
     "simple-git-hooks": "^2.9.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "unocss-preset-scrollbar": "^0.3.0"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged"

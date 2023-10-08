@@ -7,6 +7,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import { presetScrollbar } from 'unocss-preset-scrollbar'
 import { fontFamily } from '@unocss/preset-mini/dist/theme'
 
 export default defineConfig({
@@ -55,11 +56,12 @@ export default defineConfig({
     },
 
     colors: {
-      Switch: '#E70012',
-      PS5: '#0070cc',
-      primary: {
+      'Switch': '#E70012',
+      'PS5': '#0070cc',
+      'primary': {
         DEFAULT: '#00dd83',
       },
+      'bg-muted': 'var(--c-bg-muted)',
     },
 
   },
@@ -77,6 +79,7 @@ export default defineConfig({
         mono: ['JetBrains Mono:500'],
       },
     }),
+    presetScrollbar(),
   ],
 
   transformers: [

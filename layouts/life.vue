@@ -4,14 +4,15 @@
 <template>
   <AppLayout>
     <main class="mx-auto w-full bg-base px-6 py-4 sm:container lg:px-34 sm:px-8">
-      <div class="justify-between gap-6 xl:flex">
-        <div class="max-w-prose">
+      <div class="gap-12 xl:flex">
+        <div class="w-prose">
           <AppNav />
           <slot />
-          <UserCard />
         </div>
-        <div class="mt-2 max-w-lg xl:mt-8 xl:w-1/2">
-          <HomeGallery />
+        <div class="mt-4 xl:mt-20 xl:w-full">
+          <BookList />
+          <VideoList />
+          <GameList />
         </div>
       </div>
       <Footer />
