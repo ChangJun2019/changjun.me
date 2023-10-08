@@ -12,7 +12,7 @@ const {
 
 <template>
   <section>
-    <h3 class="c-text-muted text-lg font-semibold my-4">
+    <h3 id="Book" class="c-text-muted text-lg font-semibold my-4">
       图书
     </h3>
     <div class="flex w-full space-x-2 overflow-x-auto py-2" scrollbar="~ rounded track-color-transparent thumb-color-bg-muted">

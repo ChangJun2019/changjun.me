@@ -40,6 +40,7 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@nuxt/ui',
+    'dayjs-nuxt',
     'nuxt-directus',
     '@nuxt/devtools',
   ],
@@ -61,6 +62,10 @@ export default defineNuxtConfig({
   // https://content.nuxtjs.org/api/configuration
   content: {
 
+    navigation: {
+      fields: ['title', 'date', 'cover', 'tag', 'description'],
+    },
+
     documentDriven: {
       layoutFallbacks: ['content'],
     },
@@ -70,8 +75,14 @@ export default defineNuxtConfig({
         dark: 'vitesse-dark',
         default: 'vitesse-light',
       },
-      preload: [],
+      preload: ['diff', 'json', 'js', 'ts', 'css', 'shell', 'html', 'md', 'yaml', 'php', 'vue', 'bash'],
     },
+  },
+
+  dayjs: {
+    locales: ['en', 'zh-cn'],
+    plugins: ['relativeTime', 'updateLocale'],
+    defaultLocale: 'zh-cn',
   },
 
 })

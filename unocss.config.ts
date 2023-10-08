@@ -34,7 +34,7 @@ export default defineConfig({
       'c-text-muted': 'text-$c-text-muted',
       'c-text-primary': 'text-$c-text-primary',
       'text-secondary': 'text-$c-text-secondary',
-      'border-base': 'border-$c-border-base',
+      'c-border-base': 'border-$c-border-base',
       'bg-border': 'bg-$c-border-base',
     },
     {
@@ -58,9 +58,7 @@ export default defineConfig({
     colors: {
       'Switch': '#E70012',
       'PS5': '#0070cc',
-      'primary': {
-        DEFAULT: '#00dd83',
-      },
+      'primary': '#00dd83',
       'bg-muted': 'var(--c-bg-muted)',
     },
 

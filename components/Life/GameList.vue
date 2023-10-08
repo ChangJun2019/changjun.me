@@ -12,14 +12,14 @@ const {
 
 <template>
   <section>
-    <h3 class="c-text-muted text-lg font-semibold my-4">
+    <h3 id="Game" class="c-text-muted text-lg font-semibold my-4">
       游戏
     </h3>
     <div class="w-full grid gap-8 sm:grid-cols-2">
       <div
         v-for="game in games"
         :key="game.id"
-        class="overflow-hidden rounded-lg border border-base bg-base shadow-sm"
+        class="overflow-hidden rounded-lg border c-border-base bg-base shadow-sm"
       >
         <img
           :alt="game.name"

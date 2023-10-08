@@ -9,14 +9,14 @@ export const NAV = [
   },
   {
     label: 'Book',
-    link: '/book',
+    link: '/life#Book',
   },
   {
     label: 'Video',
-    link: '/video',
+    link: '/life#Video',
   },
   {
     label: 'Game',
-    link: '/game',
+    link: '/life#Game',
   },
 ]

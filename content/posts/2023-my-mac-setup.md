@@ -1,12 +1,9 @@
 ---
 layout: content
 title: 2023 My Mac Setup
-description: 2023 My Mac Setup 
 date: 2023-04-01
-update: 2023-08-07
-category: 科学技术
-tag: 瞎折腾，软件工具
-cover: https://file.52chinaweb.com/2023/04/2023-my-mac-setup-cover-new.png
+tag: Share
+cover: https://file.52chinaweb.com/2023/10/my-mac-setup.webp
 ---
 
 

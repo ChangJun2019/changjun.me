@@ -2,13 +2,9 @@
 layout: content
 title: 了不起的 Vue3
 date: 2021-11-11
-duration: 10min
 tag: Vue
 cover: https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/了不起的Vue3.png
 ---
-
-
-## Vue3 现在怎么样了？
 
 2020 年 9 月 18 日 Vue3 发布，距今已经有一年多的时间。在这一年多的时间里 Vue 团队也相继发布了 3.1 和 3.2 两个小版本，其中 3.1 版本主要做了一些对 Vue2 的兼容，3.2 新增了一些新特性（例如 `<script setup>` ）和对性能进一步做了提升，详细可以查看 [更新日志](https://github.com/vuejs/vue-next/blob/master/CHANGELOG.md)
 
