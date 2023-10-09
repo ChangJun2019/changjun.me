@@ -2,7 +2,7 @@
 layout: content
 title: 使用 Caddy 为本地前端服务提供反向代理
 image:
-  src: https://file.52chinaweb.com/2023/10/nuxt-caddy-proxy.webp
+  src: https://file.52chinaweb.com/2023/10/caddy-nuxt-proxy.webp
   alt: Gradient background, including Caddy and Nuxt logo
 date: 2023-09-20
 tag: Caddy

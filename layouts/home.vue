@@ -7,7 +7,9 @@
       <div class="justify-between gap-6 xl:flex">
         <div class="max-w-prose">
           <AppNav />
-          <slot />
+          <main class="prose prose-slate dark:prose-invert tracking-wide">
+            <slot />
+          </main>
           <UserCard />
         </div>
         <div class="mt-2 max-w-lg xl:mt-8 xl:w-1/2">

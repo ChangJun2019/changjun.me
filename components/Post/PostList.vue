@@ -32,7 +32,7 @@ const formatDate = computed(() => {
       >
 
       <div class="px-4 sm:px-6 sm:py-4 flex flex-col">
-        <div class="text-sm text-primary/60">
+        <div class="text-sm text-primary dark:opacity-80">
           {{ post.tag }}
         </div>
         <h3 class="font-semibold text-base mt-2">

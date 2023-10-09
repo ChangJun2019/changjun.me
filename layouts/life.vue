@@ -7,7 +7,9 @@
       <div class="gap-12 xl:flex">
         <div class="w-prose">
           <AppNav />
-          <slot />
+          <main class="prose prose-slate dark:prose-invert tracking-wide">
+            <slot />
+          </main>
         </div>
         <div class="mt-4 xl:mt-20 xl:w-full">
           <BookList />

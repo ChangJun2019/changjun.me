@@ -8,7 +8,7 @@ import { serverQueryContent } from '#content/server'
 export type FeedType = 'rss' | 'json' | 'atom'
 
 export default async function generateFeed(event: H3Event, type: FeedType = 'rss') {
-  const { siteUrl: host } = useRuntimeConfig().public!
+  const { siteUrl: host } = useRuntimeConfig().public
 
   const markdown = MarkdownIt({
     html: true,
@@ -43,7 +43,7 @@ export default async function generateFeed(event: H3Event, type: FeedType = 'rss
     await Promise.all(files.map(async (d) => {
       const _path = `${d._source}/${d._file}`
       const raw = await fs.readFile(_path, 'utf-8')
-      const { data, content } = matter(raw)
+      const { content } = matter(raw)
       const html = markdown.render(content)
       return {
         bodyHtml: html,
@@ -60,8 +60,8 @@ export default async function generateFeed(event: H3Event, type: FeedType = 'rss
       link: _link,
       content: doc.bodyHtml,
       description: doc.description || doc.title,
-      date: doc.date,
-      image: doc.cover,
+      date: new Date(doc.date),
+      image: doc.image?.src || '',
       author: [author],
     })
   })
