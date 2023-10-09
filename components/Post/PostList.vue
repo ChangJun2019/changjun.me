@@ -17,7 +17,7 @@ const formatDate = computed(() => {
 </script>
 
 <template>
-  <div class="grid mt-8 gap-8 2xl:grid-cols-3 sm:grid-cols-2">
+  <div class="grid mt-8 gap-8 sm:grid-cols-2 2xl:grid-cols-3 ">
     <NuxtLink
       v-for="post in postList"
       :key="post._id"
@@ -28,7 +28,7 @@ const formatDate = computed(() => {
       <img
         alt="Office"
         :src="post.image?.src || ''"
-        class="h-42 xl:h-54 w-full object-cover dark:opacity-80"
+        class="h-42 xl:h-56 w-full object-cover dark:opacity-80"
       >
 
       <div class="px-4 py-4 sm:px-6 flex flex-col">
