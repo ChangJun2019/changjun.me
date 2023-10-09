@@ -28,10 +28,10 @@ const formatDate = computed(() => {
       <img
         alt="Office"
         :src="post.image?.src || ''"
-        class="h-48 w-full object-cover dark:opacity-80"
+        class="h-42 xl:h-54 w-full object-cover dark:opacity-80"
       >
 
-      <div class="px-4 sm:px-6 sm:py-4 flex flex-col">
+      <div class="px-4 py-4 sm:px-6 flex flex-col">
         <div class="text-sm text-primary dark:opacity-80">
           {{ post.tag }}
         </div>
