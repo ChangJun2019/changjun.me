@@ -1,15 +1,10 @@
-import { SIDE_BAR } from '@/constants/sidebar'
 import { NAV } from '@/constants/app'
 
 // @unocss-include
 export default defineAppConfig({
 
   appNav: NAV,
-
-  asidebar: {
-    logo: '/img/blog-pwa-192x192.png',
-    nav: SIDE_BAR,
-  },
+  logo: '/img/blog-pwa-192x192.png',
 
   // https://ui.nuxtlabs.com/getting-started/theming
   ui: {
