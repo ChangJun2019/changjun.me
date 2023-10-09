@@ -6,9 +6,6 @@ export default defineNuxtConfig({
     { path: '~/components/Life', pathPrefix: false },
     { path: '~/components' },
   ],
-
-  extends: ['@nuxt-themes/typography'],
-
   // https://nuxt.com/docs/getting-started/configuration
   runtimeConfig: {
     // https://github.com/harlan-zw/nuxt-simple-sitemap#set-site-url-required-when-prerendering
@@ -46,6 +43,7 @@ export default defineNuxtConfig({
   ],
 
   css: [
+    '@unocss/reset/tailwind.css',
     '@/style/var.css',
     '@/style/global.css',
   ],
@@ -61,6 +59,10 @@ export default defineNuxtConfig({
 
   // https://content.nuxtjs.org/api/configuration
   content: {
+
+    markdown: {
+      anchorLinks: false,
+    },
 
     navigation: {
       fields: ['title', 'date', 'cover', 'tag', 'description'],

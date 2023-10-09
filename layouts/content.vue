@@ -2,12 +2,12 @@
 
 <template>
   <AppLayout>
-    <main class="mx-auto w-full bg-base px-6 py-4 sm:container lg:px-10 sm:px-8 lg:pl-68 sm:pl-24">
-      <article class="mx-auto max-w-prose">
-        <PostsHeader />
+    <main class="container mx-auto max-w-prose px-6 py-4 lg:p-8">
+      <PostHeader />
+      <main class="prose prose-slate dark:prose-invert tracking-wide">
         <slot />
-        <Footer />
-      </article>
+      </main>
+      <Footer />
     </main>
   </AppLayout>
 </template>

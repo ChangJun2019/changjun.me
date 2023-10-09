@@ -12,7 +12,7 @@ useHead({
 </script>
 
 <template>
-  <div class="w-full flex flex-col sm:flex-row">
+  <div class="w-full">
     <Head>
       <Html lang="zh-Hans" />
       <Title>Chang Jun' Blog</Title>
@@ -26,8 +26,6 @@ useHead({
       <Link rel="icon" type="image/png" sizes="16x16" href="/img/blog-favicon-16x16.png" />
       <Link rel="icon" type="image/x-icon" href="/favicon.ico" />
     </Head>
-    <!-- <AppMenu /> -->
-    <!-- <LayoutAside /> -->
     <slot />
   </div>
 </template>

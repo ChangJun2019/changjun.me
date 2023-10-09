@@ -1,9 +1,11 @@
 ---
 layout: content
 title: 使用 Caddy 为本地前端服务提供反向代理
+image:
+  src: https://file.52chinaweb.com/2023/10/nuxt-caddy-proxy.webp
+  alt: Gradient background, including Caddy and Nuxt logo
 date: 2023-09-20
 tag: Caddy
-cover: https://file.52chinaweb.com/2023/10/nuxt-caddy-proxy.webp
 ---
 
 最近在本地开发时，将反向代理服务从 Nginx 切换到 Caddy，在将其与 Nuxt 使用时，遇到了一点问题。
@@ -121,19 +123,19 @@ Nuxt 中有一个我很喜欢的小功能，当你要监听的 host 设置为 `0
 
 ```javascript
 export default defineNuxtConfig({
-	devServer: {
-		host: '0.0.0.0',
-		port: 3000,
-	},
-	
-	vite: {
-		server: {
-			hmr: {
-				clientPort: 443,
-				protocol: 'wss',
-			},
-		},
-	},
+  devServer: {
+    host: '0.0.0.0',
+    port: 3000,
+  },
+
+  vite: {
+    server: {
+      hmr: {
+        clientPort: 443,
+        protocol: 'wss',
+      },
+    },
+  },
 })
 ```
 

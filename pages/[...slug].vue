@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <main>
+  <main class="w-full">
     <NuxtLayout>
       <ContentDoc />
     </NuxtLayout>

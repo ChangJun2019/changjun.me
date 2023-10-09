@@ -1,15 +1,10 @@
 <script setup lang="ts">
 import type { MarkdownParsedContent } from '@nuxt/content/dist/runtime/types'
+import type { CustomFrontMatter } from '@/types/markdown'
 
-interface Article extends MarkdownParsedContent {
-  title: string
-  cover: string
-  date: string
-  tag: string
-  description: string
-}
+type PostType = CustomFrontMatter & MarkdownParsedContent
 
-const { data: postList } = await useAsyncData('postList', () => queryContent<Article>('posts').sort({ date: -1 }).find())
+const { data: postList } = await useAsyncData('postList', () => queryContent<PostType>('posts').sort({ date: -1 }).find())
 
 const formatDate = computed(() => {
   return function (time: any) {
@@ -23,14 +18,16 @@ const formatDate = computed(() => {
 
 <template>
   <div class="grid mt-8 gap-8 2xl:grid-cols-3 sm:grid-cols-2">
-    <article
+    <NuxtLink
       v-for="post in postList"
       :key="post._id"
+      :to="post._path"
+      target="_black"
       class="overflow-hidden rounded-lg border c-border-base bg-base cursor-pointer"
     >
       <img
         alt="Office"
-        :src="post.cover"
+        :src="post.image?.src || ''"
         class="h-48 w-full object-cover dark:opacity-80"
       >
 
@@ -50,6 +47,6 @@ const formatDate = computed(() => {
           {{ formatDate(post.date) }}
         </p>
       </div>
-    </article>
+    </NuxtLink>
   </div>
 </template>

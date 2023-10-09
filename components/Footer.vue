@@ -12,7 +12,7 @@
     <p mt-2>
       <a class="border-b-1 border-dashed transition duration-500 hover:border-primary hover:border-solid hover:text-primary" href="https://beian.miit.gov.cn/">晋ICP备19013203号</a>
     </p>
-    <div class="flex justify-center mt-4">
+    <div class="flex justify-center mt-6">
       <div>
         <AppSwitchColor />
       </div>

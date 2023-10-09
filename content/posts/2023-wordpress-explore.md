@@ -3,7 +3,9 @@ layout: content
 title: WordPress 探索
 date: 2023-10-01
 tag: WordPress
-cover: https://file.52chinaweb.com/2023/10/wordpress-explore.webp
+image:
+  src: https://file.52chinaweb.com/2023/10/wordpress-explore.webp
+  alt: Gradient background, including WordPress logo
 ---
 
 最近在工作时需要接触到 WordPress 以及 PHP 相关的技术栈，所以需要对这些内容稍稍探索一下。

@@ -59,7 +59,8 @@
     "Vite",
     "vitesse",
     "vueuse",
-    "Weibo"
+    "Weibo",
+    "unref"
   ],
   "typescript.tsdk": "node_modules/typescript/lib"
 }
