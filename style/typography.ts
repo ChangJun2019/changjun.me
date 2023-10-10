@@ -47,5 +47,64 @@ export default {
     'font-style': 'italic',
     'border-left': '2px solid var(--c-border-base)',
     'margin-top': '1.5rem',
+    'font-weight': 'normal',
+  },
+
+  'ol,ul': {
+    padding: '0',
+    margin: '1.5rem 0 1.5rem 1.5rem',
+  },
+
+  'ol > li::marker,ul > li::marker,summary::marker': {
+    color: 'inherit',
+  },
+
+  'img,video': {
+    'max-width': '100%',
+  },
+  'figure,picture': {
+    margin: '1.5rem 0',
+  },
+
+  'figcaption': {
+    'color': 'var(--c-text-muted)',
+    'font-size': '.875rem',
+  },
+
+  'code': {
+    'color': 'var(--un-prose-code)',
+    'font-size': '.875rem',
+    'font-weight': 600,
+    'padding': '0.2rem 0.3rem',
+    'border-radius': '0.25rem',
+    'border': '1px solid var(--c-border-base)',
+  },
+
+  ':not(pre) > code::before,:not(pre) > code::after': {
+    content: 'none',
+  },
+  'pre': {
+    'padding': '0 1.2rem',
+    'overflow-x': 'auto',
+    'border-radius': '.375rem',
+    'border': '1px solid var(--c-border-base)',
+  },
+  'pre,code': {
+    'white-space': 'pre',
+    'word-spacing': 'normal',
+    'word-break': 'normal',
+    'word-wrap': 'normal',
+    '-moz-tab-size': 2,
+    '-o-tab-size': 2,
+    'tab-size': 2,
+    '-webkit-hyphens': 'none',
+    '-moz-hyphens': 'none',
+    'hyphens': 'none',
+    'background': 'var(--c-bg-code)',
+    'letter-spacing': 'normal',
+  },
+  'pre code': {
+    'font-weight': 'inherit',
+    'border': 'none',
   },
 }

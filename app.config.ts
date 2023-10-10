@@ -4,7 +4,7 @@ import { NAV } from '@/constants/app'
 export default defineAppConfig({
 
   appNav: NAV,
-  logo: '/img/blog-pwa-192x192.png',
+  logo: '/blog-pwa-192x192.png',
 
   // https://ui.nuxtlabs.com/getting-started/theming
   ui: {
