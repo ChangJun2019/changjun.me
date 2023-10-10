@@ -4,7 +4,7 @@ title: 了不起的 Vue3
 date: 2021-11-11
 tag: Vue
 image:
-  src: https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/了不起的Vue3.png
+  src: /cover-amazing-vue3.png
   alt: blog cover
 ---
 
@@ -41,7 +41,7 @@ image:
 
 ## 我认为的 Vue
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/我认为的Vue.png)
+![我理解的 Vue](/1-vue-i-think-vue.png)
 
 ## 好的开发体验
 
@@ -51,7 +51,7 @@ image:
 
 ### 编辑器插件 volar
 
-使用更强大支持 Vue3 新特性的 [volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) 作为编辑器插件。(禁止Vetur，以免造成冲突。)
+使用更强大支持 Vue3 新特性的 [volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) 作为编辑器插件。(禁止 Vetur，以免造成冲突。)
 
 ### script setup
 
@@ -60,19 +60,54 @@ image:
 可以结合 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) 按需导入组件和 [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) 自动导入API插件获得更好的开发体验。
 
 ### style v-bind
+```vue
+<script setup lang="ts">
+const theme = {
+  color: 'red',
+}
+</script>
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/vue-style-bind.png)
+<template>
+  <p>hello</p>
+</template>
+
+<style scoped>
+/* 实际的值会编译成 hash + 变量名 CSS 自定义属性，以内联的方式应用到组件根元素上 */
+p{
+  color: v-bind('theme.color');
+}
+</style>
+```
 
 ### Ref Sugar(实验性)
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/ref_sugar.png)
+```js
+// $ -> 响应式变量
+// $$ -> refs
+function useMouse() {
+  const x = $ref(0)
+  const y = $ref(0)
 
+  return $$({
+    x,
+    y
+  })
+}
+```
 [Ref sugar RFC](https://github.com/vuejs/rfcs/discussions/369)
-
 
 ### setup props 解构(实验性)
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/props.png)
+```ts
+interface ScriptSetupProps {
+  name: string
+  age: number
+}
+
+// 可以对 Props 解构
+// 可以设置默认值且不丢失响应性
+const { name = 'Mr.Chang', age = 18 } = defineProps<ScriptSetupProps>()
+```
 
 [查看更多 RFC](https://github.com/vuejs/vue-next/pull/4690)
 	
@@ -128,7 +163,7 @@ pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者
 
 ## Vue devtools 
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/vue-devtools.png)
+![Vue 插件功能标注](/1-vue-devtools.png)
 
 [Chrome 安装Beta](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg)
 
@@ -179,11 +214,11 @@ inject(key)
 
 ## 生命周期
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/vue3-lifecycle.png)
+![Vue 的生命周期](/1-vue-lifecycle.png)
 
 调试钩子 `renderTracked` 和 `renderTriggered`
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/Vue3调试钩子.png)
+![Vue 当中的调试 Hook](/1-vue-debug-hook.png)
 
 ## 指令和内置组件
 
@@ -282,7 +317,7 @@ const mount = (containerOrSelector)=>{
 
 ### 组件渲染的流程：
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/组件渲染.png)
+![Vue 一个组件如何渲染](/1-vue-component-render.png)
 
 ```javascript
 // app.vue
@@ -409,11 +444,11 @@ const mountChildren = () => {
 
 组件更新的主要流程：
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/组件更新流程.png)
+![在 Vue 中，一个组件的更新流程](/1-component-update-flow.png)
 
 当元素子节点更新的时候：
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/元素子节点更新.png)
+![元素子节点如何更新](/1-element-child-update.png)
 
 ```javascript
 // 设置副作用渲染函数
@@ -466,8 +501,6 @@ const updateComponent = (n1,n2,optimized) => {
   }
 }
 
-
-
 ```
 
 
@@ -475,11 +508,11 @@ const updateComponent = (n1,n2,optimized) => {
 
 ### 响应性原理
 
-![响应性原理](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/响应性.png)
+![响应性原理](/1-vue-reactive.png)
 
 ### Vue 响应性原理
 
-![Vue 响应性原理](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/Vue响应式原理.png)
+![Vue 响应性原理](/1-vue-reactive-principle.png)
 
 ### 调试 computed 3.2+
 
@@ -542,7 +575,7 @@ function $dispose() {
 
 ### 模板编译的流程
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/Vue模板编译.png)
+![Vue 模版编译的流程](/1-vue-template-compilation.png)
 
 ### 模板编译时的优化
 
@@ -550,23 +583,15 @@ function $dispose() {
 - 静态提升
 - Cache Event handler
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/Vue编译优化.png)
+![Vue 模版编译优化](/1-vue-compile-optimize.png)
 
 ### 关于 patchFlags 和 shapFlags
 
-![](https://cjimg-1254386489.cos.ap-shanghai.myqcloud.com/patchFlags和shapeFlags.png)
+![Vue 编译当中的 patchFlags 和 shapFlags](/1-vue-patchflags-shapeflags.png)
 
 `patchFlags` (packages/shared/src/patchFlags.ts) 是编译时 `transform` 给 AST 节点 打上的优化标识，当在 diff 期间，我们就可以准确的更新。
 
 `shapFlags` (packages/shared/src/shapeFlags.ts) 顾名思义，其实就是元素的类型定义。例如元素、函数组件、插槽等。
-
-
-## 更新记录
-
-我会持续保持这篇内容最新...
-
-- 12 月 26 日: 新增了 Vue3 新文档的内容
-- 2 月 7 日：新增了  Vue3 成为新的默认版本的内容
 
 
 ## 写在最后的

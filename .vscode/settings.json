@@ -42,25 +42,44 @@
   "cSpell.words": [
     "antfu",
     "Attributify",
+    "demi",
     "directus",
     "HHKB",
+    "Hydate",
     "iconify",
+    "instanceof",
     "linkify",
     "LXGW",
     "nuxi",
     "nuxt",
     "nuxthq",
     "nuxtjs",
+    "pach",
+    "Pinia",
+    "shap",
     "sina",
     "styl",
     "taze",
     "Trancy",
     "unocss",
+    "unplugin",
+    "unref",
+    "Vant",
+    "vben",
+    "Vetur",
     "Vite",
     "vitesse",
+    "vnode",
     "vueuse",
-    "Weibo",
-    "unref"
+    "Vuex",
+    "Weibo"
   ],
-  "typescript.tsdk": "node_modules/typescript/lib"
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "grammarly.files.include": [
+    "**/readme.md",
+    "**/README.md",
+    "**/*.txt",
+    "content/**/*.md"
+  ]
 }

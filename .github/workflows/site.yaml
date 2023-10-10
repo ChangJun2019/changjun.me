@@ -1,11 +1,11 @@
 name: auto deploy site
 
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - README.md
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths-ignore:
+#       - README.md
 
 jobs:
   deploy:
