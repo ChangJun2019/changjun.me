@@ -7,7 +7,8 @@
   --c-border-base: #E4E4E7;
   --c-text-base: #09090b;
   --c-text-secondary: #71717A;
-  --c-bg-code: '#ffffff'
+  --c-bg-code: #F4F4F5;
+  --c-pre-bg-code: #0e0e0e: #ffffff
 }
 
 .dark{ 
@@ -19,5 +20,6 @@
   --c-text-muted: #A1A1AA;
   --c-bg-primary: #FAFAFA;
   --c-text-primary: #18181B;
-  --c-bg-code: #0e0e0e
+  --c-bg-code: #27272A;
+  --c-pre-bg-code: #0e0e0e;
 }

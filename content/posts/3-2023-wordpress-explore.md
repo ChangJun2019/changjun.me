@@ -4,7 +4,7 @@ title: WordPress 探索
 date: 2023-10-01
 tag: WordPress
 image:
-  src: https://file.52chinaweb.com/2023/10/blog-wordpress-explore.webp
+  src: /images/0-cover-wordpress-explore.png
   alt: Gradient background, including WordPress logo
 ---
 

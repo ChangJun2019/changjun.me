@@ -78,6 +78,7 @@ export default {
     'padding': '0.2rem 0.3rem',
     'border-radius': '0.25rem',
     'border': '1px solid var(--c-border-base)',
+    'background': 'var(--c-bg-code)',
   },
 
   ':not(pre) > code::before,:not(pre) > code::after': {
@@ -88,6 +89,7 @@ export default {
     'overflow-x': 'auto',
     'border-radius': '.375rem',
     'border': '1px solid var(--c-border-base)',
+    'background': 'var(--c-pre-bg-code)',
   },
   'pre,code': {
     'white-space': 'pre',
@@ -100,11 +102,12 @@ export default {
     '-webkit-hyphens': 'none',
     '-moz-hyphens': 'none',
     'hyphens': 'none',
-    'background': 'var(--c-bg-code)',
     'letter-spacing': 'normal',
+    'background': 'normal',
   },
   'pre code': {
     'font-weight': 'inherit',
     'border': 'none',
+    'background': 'transparent',
   },
 }

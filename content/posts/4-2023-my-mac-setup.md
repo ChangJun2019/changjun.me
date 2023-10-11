@@ -4,7 +4,7 @@ title: 2023 My Mac Setup
 date: 2023-04-01
 tag: Share
 image:
-  src: https://file.52chinaweb.com/2023/10/my-mac-setup.webp
+  src: /images/0-cover-my-mac-setup.webp
   alt: A cup of dirty coffee and MacBook Pro
 ---
 

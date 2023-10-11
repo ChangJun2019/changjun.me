@@ -4,7 +4,7 @@ title: 了不起的 Vue3
 date: 2021-11-11
 tag: Vue
 image:
-  src: /cover-amazing-vue3.png
+  src: /images/0-cover-amazing-vue3.png
   alt: blog cover
 ---
 
@@ -41,7 +41,7 @@ image:
 
 ## 我认为的 Vue
 
-![我理解的 Vue](/1-vue-i-think-vue.png)
+![我理解的 Vue](/images/images/1-vue-i-think-vue.png)
 
 ## 好的开发体验
 
@@ -163,7 +163,7 @@ pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者
 
 ## Vue devtools 
 
-![Vue 插件功能标注](/1-vue-devtools.png)
+![Vue 插件功能标注](/images/1-vue-devtools.png)
 
 [Chrome 安装Beta](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg)
 
@@ -214,11 +214,11 @@ inject(key)
 
 ## 生命周期
 
-![Vue 的生命周期](/1-vue-lifecycle.png)
+![Vue 的生命周期](/images/1-vue-lifecycle.png)
 
 调试钩子 `renderTracked` 和 `renderTriggered`
 
-![Vue 当中的调试 Hook](/1-vue-debug-hook.png)
+![Vue 当中的调试 Hook](/images/1-vue-debug-hook.png)
 
 ## 指令和内置组件
 
@@ -317,7 +317,7 @@ const mount = (containerOrSelector)=>{
 
 ### 组件渲染的流程：
 
-![Vue 一个组件如何渲染](/1-vue-component-render.png)
+![Vue 一个组件如何渲染](/images/1-vue-component-render.png)
 
 ```javascript
 // app.vue
@@ -444,11 +444,11 @@ const mountChildren = () => {
 
 组件更新的主要流程：
 
-![在 Vue 中，一个组件的更新流程](/1-component-update-flow.png)
+![在 Vue 中，一个组件的更新流程](/images/1-component-update-flow.png)
 
 当元素子节点更新的时候：
 
-![元素子节点如何更新](/1-element-child-update.png)
+![元素子节点如何更新](/images/1-element-child-update.png)
 
 ```javascript
 // 设置副作用渲染函数
@@ -508,11 +508,11 @@ const updateComponent = (n1,n2,optimized) => {
 
 ### 响应性原理
 
-![响应性原理](/1-vue-reactive.png)
+![响应性原理](/images/1-vue-reactive.png)
 
 ### Vue 响应性原理
 
-![Vue 响应性原理](/1-vue-reactive-principle.png)
+![Vue 响应性原理](/images/1-vue-reactive-principle.png)
 
 ### 调试 computed 3.2+
 
@@ -575,7 +575,7 @@ function $dispose() {
 
 ### 模板编译的流程
 
-![Vue 模版编译的流程](/1-vue-template-compilation.png)
+![Vue 模版编译的流程](/images/1-vue-template-compilation.png)
 
 ### 模板编译时的优化
 
@@ -583,11 +583,11 @@ function $dispose() {
 - 静态提升
 - Cache Event handler
 
-![Vue 模版编译优化](/1-vue-compile-optimize.png)
+![Vue 模版编译优化](/images/1-vue-compile-optimize.png)
 
 ### 关于 patchFlags 和 shapFlags
 
-![Vue 编译当中的 patchFlags 和 shapFlags](/1-vue-patchflags-shapeflags.png)
+![Vue 编译当中的 patchFlags 和 shapFlags](/images/1-vue-patchflags-shapeflags.png)
 
 `patchFlags` (packages/shared/src/patchFlags.ts) 是编译时 `transform` 给 AST 节点 打上的优化标识，当在 diff 期间，我们就可以准确的更新。
 
