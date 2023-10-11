@@ -25,12 +25,7 @@ const formatDate = computed(() => {
       target="_black"
       class="overflow-hidden rounded-lg border c-border-base bg-base cursor-pointer"
     >
-      <img
-        alt="Office"
-        :src="post.image?.src || ''"
-        class="h-42 xl:h-56 w-full object-cover dark:opacity-80"
-      >
-
+      <img :src="post.image?.src || ''" loading="lazy" class="h-42 xl:h-56 w-full object-cover dark:opacity-80">
       <div class="px-4 py-4 sm:px-6 flex flex-col">
         <div class="text-sm text-primary dark:opacity-80">
           {{ post.tag }}

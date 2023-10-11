@@ -41,7 +41,7 @@ image:
 
 ## 我认为的 Vue
 
-![我理解的 Vue](/images/images/1-vue-i-think-vue.png)
+![我理解的 Vue](/images/1-vue-i-think-vue.png)
 
 ## 好的开发体验
 

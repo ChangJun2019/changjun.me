@@ -61,7 +61,7 @@ export default async function generateFeed(event: H3Event, type: FeedType = 'rss
       content: doc.bodyHtml,
       description: doc.description || doc.title,
       date: new Date(doc.date),
-      image: doc.image?.src || '',
+      image: `${host}${doc.image?.src || ''}`,
       author: [author],
     })
   })
@@ -70,6 +70,5 @@ export default async function generateFeed(event: H3Event, type: FeedType = 'rss
     return feed.atom1()
   if (type === 'json')
     return feed.json1()
-
   return feed.rss2()
 }
