@@ -24,7 +24,7 @@ const {
         <img
           :alt="game.name"
           :src="game.cover"
-          class="h-46 w-full object-cover"
+          class="h-46 w-full object-cover dark:opacity-90"
         >
 
         <div class="p-4 sm:px-6 sm:py-4">
