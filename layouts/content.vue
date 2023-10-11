@@ -2,7 +2,7 @@
 
 <template>
   <AppLayout>
-    <main class="container mx-auto max-w-prose px-6 py-4 lg:p-8">
+    <main class="container mx-auto max-w-prose px-6 py-4 lg:py-8 lg:px-0">
       <PostHeader />
       <main class="prose prose-slate dark:prose-invert tracking-wide">
         <slot />
