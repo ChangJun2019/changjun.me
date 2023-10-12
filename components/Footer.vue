@@ -4,7 +4,7 @@
 <template>
   <footer class="mt-8 py-14 text-center">
     <p>
-      <a class="border-b-1 border-dashed transition duration-500 hover:border-primary hover:border-solid hover:text-primary" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>
+      <a class="border-b-1 border-dashed transition duration-500 hover:border-primary hover:border-solid hover:text-primary" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
     </p>
     <p mt-2>
       © 2023 Chang Jun. All Rights Reserved.
