@@ -1,11 +1,11 @@
 name: auto deploy site
 
-on:
-  push:
-    branches:
-      - main 
-    paths-ignore:
-      - README.md
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths-ignore:
+#       - README.md
 
 jobs:
   deploy:
@@ -43,21 +43,21 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      
+
       - name: build
         run: pnpm run generate
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
-            SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
-            ARGS: "-rlgoDzvc -i --delete"
-            SOURCE: "dist/"
-            REMOTE_HOST: ${{ secrets.SSH_HOST }}
-            REMOTE_USER: ${{ secrets.SSH_USER }}
-            TARGET: ${{ secrets.REMOTE_TARGET }}
-            EXCLUDE: "/dist/, /node_modules/"
-      
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_KEY }}
+          ARGS: -rlgoDzvc -i --delete
+          SOURCE: dist/
+          REMOTE_HOST: ${{ secrets.SSH_HOST }}
+          REMOTE_USER: ${{ secrets.SSH_USER }}
+          TARGET: ${{ secrets.REMOTE_TARGET }}
+          EXCLUDE: '/dist/, /node_modules/'
+
       - name: send telegram message on push
         uses: appleboy/telegram-action@master
         with:
@@ -68,8 +68,7 @@ jobs:
 
             ${{ github.actor }} created commit:
             Commit message: ${{ github.event.commits[0].message }}
-            
+
             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
 
             Build job of ${{github.repository}} completed successfully!
-

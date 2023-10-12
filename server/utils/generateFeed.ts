@@ -1,6 +1,5 @@
 import type { H3Event } from 'h3'
 import { Feed } from 'feed'
-import dayjs from 'dayjs'
 import matter from 'gray-matter'
 import MarkdownIt from 'markdown-it'
 import fs from 'fs-extra'
@@ -9,7 +8,7 @@ import { serverQueryContent } from '#content/server'
 export type FeedType = 'rss' | 'json' | 'atom'
 
 export default async function generateFeed(event: H3Event, type: FeedType = 'rss') {
-  const { siteUrl: host } = useRuntimeConfig().public!
+  const { siteUrl: host } = useRuntimeConfig().public
 
   const markdown = MarkdownIt({
     html: true,
@@ -44,7 +43,7 @@ export default async function generateFeed(event: H3Event, type: FeedType = 'rss
     await Promise.all(files.map(async (d) => {
       const _path = `${d._source}/${d._file}`
       const raw = await fs.readFile(_path, 'utf-8')
-      const { data, content } = matter(raw)
+      const { content } = matter(raw)
       const html = markdown.render(content)
       return {
         bodyHtml: html,
@@ -61,8 +60,8 @@ export default async function generateFeed(event: H3Event, type: FeedType = 'rss
       link: _link,
       content: doc.bodyHtml,
       description: doc.description || doc.title,
-      date: dayjs(doc.date).toDate(),
-      image: doc.cover,
+      date: new Date(doc.date),
+      image: `${host}${doc.image?.src || ''}`,
       author: [author],
     })
   })
@@ -71,6 +70,5 @@ export default async function generateFeed(event: H3Event, type: FeedType = 'rss
     return feed.atom1()
   if (type === 'json')
     return feed.json1()
-
   return feed.rss2()
 }

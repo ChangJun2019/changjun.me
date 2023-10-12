@@ -1,0 +1,16 @@
+
+.dark body{
+  color: #fff;
+}
+
+html, body {
+  --at-apply: font-sans;
+  background-color: var(--c-bg-base);
+  color: var(--c-text-base);
+}
+
+.prose-code code, kbd, samp, pre{
+  --at-apply: font-mono
+}
+
+
