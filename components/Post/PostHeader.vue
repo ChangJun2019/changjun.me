@@ -9,7 +9,7 @@ const d = computed(() => {
 <template>
   <header class="w-full">
     <div class="flex items-center justify-center rounded-xl overflow-hidden c-bg-muted">
-      <img :src="image.src" alt="" class="w-full h-auto dark:brightness-80 object-cover">
+      <img :src="image.src" alt="" class="w-full h-auto max-h-80 md:max-h-120 dark:brightness-80 object-cover">
     </div>
     <div class="text-sm text-primary/60 mt-4">
       {{ tag }}

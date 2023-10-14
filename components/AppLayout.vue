@@ -1,14 +1,4 @@
 <script setup lang="ts">
-useHead({
-  script: [
-    {
-      'src': 'https://umami.52chinaweb.com/script.js',
-      'async': true,
-      'data-website-id': 'ee1faa71-851b-470b-a5d4-5b11c648ce50',
-      'tagPosition': 'bodyClose',
-    },
-  ],
-})
 </script>
 
 <template>
