@@ -6,8 +6,13 @@
       <PostHeader />
       <main class="prose prose-slate dark:prose-invert tracking-wide">
         <slot />
+
+        <UButton to="/blog" variant="outline" class="mt-6 not-prose">
+          Go Back
+        </UButton>
       </main>
       <Footer />
+      <PostBackTop />
     </main>
   </AppLayout>
 </template>
