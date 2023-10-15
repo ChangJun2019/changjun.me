@@ -12,6 +12,7 @@
         </UButton>
       </main>
       <Footer />
+      <PostBackTop />
     </main>
   </AppLayout>
 </template>
