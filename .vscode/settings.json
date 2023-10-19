@@ -74,7 +74,8 @@
     "vnode",
     "vueuse",
     "Vuex",
-    "Weibo"
+    "Weibo",
+    "zoxide"
   ],
 
   "typescript.tsdk": "node_modules/typescript/lib",
