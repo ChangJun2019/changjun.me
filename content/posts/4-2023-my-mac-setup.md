@@ -117,6 +117,8 @@ brew install google-chrome-dev --cask
 - SCIMKiller 常驻菜单栏一键可以杀死造成卡顿的中文输入法
 - Battery 管理电池健康，将电池限制在 80%
 
+可以查看我的 [Brewfile](https://github.com/ChangJun2019/my-mac-setup-config/blob/main/Brewfile)。
+
 ## 我的开发环境设置
 
 ### 终端设置
