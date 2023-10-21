@@ -12,7 +12,7 @@ image:
 
 ## 我的硬件设施
 
-- 主力：MacBook Pro M2 Pro 14寸 16G
+- 主力：MacBook Pro M2 Pro 14 寸 16G
 - 键盘：HHKB Professional BT、少数派 x Keychron K3
 - 显示器：DELL U2723QE 4K、Kuycon P27UB
 - 鼠标：罗技 MX Master 3s for Mac
@@ -36,7 +36,7 @@ image:
 - 外观：深色模式 (偏爱)
 - 桌面与程序坞：自动隐藏和显示、不显示最近使用、点按墙纸仅在台前调度中、在桌面上不显示小组件
 - 墙纸和屏幕保护：格陵兰大冰川（是真的好看）
-- 触控ID与密码：开启 Apple Watch 解锁
+- 触控 ID 与密码：开启 Apple Watch 解锁
 - 互联网账户：添加谷歌邮箱和 QQ 邮箱
 - 键盘：添加常用自定义短语
 - 鼠标：安装 Logi Options+ 来控制 MX Master
@@ -127,7 +127,7 @@ brew install google-chrome-dev --cask
 
 从 Warp 发布之后我就将其作为我的默认终端了，这个基于 Rust 的终端给我的感觉就是简洁、迅速、便利、智能。
 
-如果你感兴趣，可以看一下这篇文章: [Warp：是时候改变你的命令行工具了](https://sspai.com/post/79262) 
+如果你感兴趣，可以看一下这篇文章：[Warp：是时候改变你的命令行工具了](https://sspai.com/post/79262) 
 
 通过 Oh My ZSH 管理 zsh 的插件，Starship 来做自定义提示。
 

@@ -31,9 +31,9 @@ tag: Caddy
 
 为了实现这个需求，在使用 Nginx 的情况下，一般需要这样做。
 
-1. 修改本机 hosts， 将域名解析到 127.0.0.1
+1. 修改本机 hosts，将域名解析到 127.0.0.1
 2. 启动 Nginx 监听 80 端口
-3. 编写 nginx 配置，将域名转发到本地前端服务端口（3000或者其它）
+3. 编写 nginx 配置，将域名转发到本地前端服务端口（3000 或者其它）
 4. 配置 SSL 
 
 可以 [在这里](https://www.digitalocean.com/community/tools/nginx?domains.0.server.wwwSubdomain=true&domains.0.server.redirectSubdomains=false&domains.0.https.certType=custom&domains.0.php.php=false&domains.0.reverseProxy.reverseProxy=true&domains.0.routing.index=index.html&domains.0.routing.fallbackHtml=true&domains.0.routing.fallbackPhp=false&global.app.lang=zhCN) （可以在线生成 nginx 配置）查看上述生成的配置文件。
@@ -93,7 +93,7 @@ reverse_proxy :3000
 
 前面说过 Caddy 是 [默认开启 HTTPS](https://caddyserver.com/docs/automatic-https) 的，当你使用域名时，Caddy 会尝试获取一个 public ACME CA 证书（Let's Encrypt 或者 ZeroSSL），托管并保持所有证书的更新，自动将 HTTP 重定向到 HTTPS。
 
-对于本地 HTTPS，Caddy 会在本地生成一个自己的证书颁发机构（CA）并使用它来签署证书，（当你需要开启时，过程中将需要你输入密码来获得权限）如果你使用的是 macOS ，你可以在钥匙串访问中查看到一个名称叫 Caddy Local Authority - 2023 ECC Root 的系统根证书。
+对于本地 HTTPS，Caddy 会在本地生成一个自己的证书颁发机构（CA）并使用它来签署证书，（当你需要开启时，过程中将需要你输入密码来获得权限）如果你使用的是 macOS，你可以在钥匙串访问中查看到一个名称叫 Caddy Local Authority - 2023 ECC Root 的系统根证书。
 
 对于本地 `localhost` ， `127.0.0.1` 等内部地址访问会自动加载本地 HTTPS，如果你在开发环境中，也可以通过修改配置来控制是否使用内部可信任的证书。我们只需要在配置文件中加入 `tls internal` ，来告诉 Caddy 我们使用内部 CA 来为站点签署证书。
 
@@ -154,11 +154,11 @@ reverse_proxy @websocket :24678
 reverse_proxy :3000
 ```
 
-重新启动后，发现 WebSocket 已经成功连接， HMR 也正常。
+重新启动后，发现 WebSocket 已经成功连接，HMR 也正常。
 
 ## 后续
 
-在我对项目依赖进行升级后，发现升级后的 **Nuxt 3.7.4** 版本已经不再需要设置 Vite  HMR ，Caddy 也无需再对 WebSocket 进行转发，一切默认运行正常。
+在我对项目依赖进行升级后，发现升级后的 **Nuxt 3.7.4** 版本已经不再需要设置 Vite  HMR，Caddy 也无需再对 WebSocket 进行转发，一切默认运行正常。
 
 运行 `npx taze major -w`  升级项目依赖到最新的稳定版本，并写入到 package.json 中。[taze](https://github.com/antfu/taze) 是一个现代化的命令行工具，用于升级项目依赖。
 
