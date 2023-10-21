@@ -80,7 +80,7 @@ Arc 浏览器横空出世后，优秀的视觉效果、垂直标签栏、多 Spa
 
 在 Chrome Dev 中我安装的插件会更加针对开发：
 
-1. Vue/React Devtools 
+1. Vue/React DevTools 
 2. [Start - A Clean New Tab](https://chrome.google.com/webstore/detail/start-a-clean-new-tab/dlofaadadkacecikehaefpgdahbgdmen) ，我写了一个扩展来去除 Chrome New Tab 默认元素，同时支持设置背景图片。
 3. File Icons for GitHub and GitLab 浏览 GitHub 文件图标修改插件。
 4. uBlock Origin 广告过滤插件

@@ -11,7 +11,8 @@
     "upgrade": "nlx taze major -w",
     "cleanup": "nlx nuxi@latest cleanup",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "lint:md": "npx case-police \"**/*.md\" --fix"
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.0"
