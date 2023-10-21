@@ -84,5 +84,13 @@
     "**/README.md",
     "**/*.txt",
     "content/**/*.md"
-  ]
+  ],
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    }
+  }
+
 }
