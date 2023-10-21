@@ -36,7 +36,7 @@ const {
             {{ game.comment }}
           </p>
         </div>
-        <div class="flex sm:px-6 sm:pb-4 space-x-4">
+        <div class="flex px-3 pb-3 sm:px-6 sm:pb-4 space-x-4">
           <GameBadge :platform="game.platform" />
           <div v-if="game.duration" class="inline-flex items-center justify-center text-xs c-bg-primary c-text-primary font-semibold px-1 py-0.5 rounded-sm">
             {{ game.duration }}
