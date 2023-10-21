@@ -12,14 +12,14 @@ const {
 
 <template>
   <section>
-    <h3 id="Game" class="c-text-muted text-lg font-semibold my-4">
+    <h3 id="Game" class="my-4 text-lg font-semibold c-text-muted">
       游戏
     </h3>
-    <div class="w-full grid gap-8 sm:grid-cols-2">
+    <div class="grid w-full gap-8 sm:grid-cols-2">
       <div
         v-for="game in games"
         :key="game.id"
-        class="overflow-hidden rounded-lg border c-border-base bg-base shadow-sm"
+        class="overflow-hidden border c-border-base rounded-lg bg-base shadow-sm"
       >
         <img
           :alt="game.name"
@@ -28,17 +28,17 @@ const {
         >
 
         <div class="p-4 sm:px-6 sm:py-4">
-          <h3 class="c-text-base font-semibold line-clamp-2 min-h-12">
+          <h3 class="line-clamp-2 min-h-12 font-semibold c-text-base">
             {{ game.name }}
           </h3>
 
-          <p class="mt-2 line-clamp-3 text-sm/relaxed c-text-muted">
+          <p class="line-clamp-3 mt-2 text-sm/relaxed c-text-muted">
             {{ game.comment }}
           </p>
         </div>
-        <div class="flex px-3 pb-3 sm:px-6 sm:pb-4 space-x-4">
+        <div class="flex px-3 pb-3 space-x-4 sm:px-6 sm:pb-4">
           <GameBadge :platform="game.platform" />
-          <div v-if="game.duration" class="inline-flex items-center justify-center text-xs c-bg-primary c-text-primary font-semibold px-1 py-0.5 rounded-sm">
+          <div v-if="game.duration" class="inline-flex items-center justify-center rounded-sm c-bg-primary px-1 py-0.5 text-xs font-semibold c-text-primary">
             {{ game.duration }}
           </div>
         </div>

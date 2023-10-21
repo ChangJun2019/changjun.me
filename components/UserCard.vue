@@ -11,7 +11,7 @@ import { MY_LINKS as userLinks } from '@/constants/profile'
         Chang Jun
       </h1>
 
-      <p class="mt-2 c-text-muted text-sm capitalize">
+      <p class="mt-2 text-sm capitalize c-text-muted">
         柔软的心
       </p>
 

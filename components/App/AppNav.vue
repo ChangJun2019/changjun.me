@@ -12,9 +12,9 @@ const appNav = computed(() => {
 </script>
 
 <template>
-  <div class="w-full my-4">
+  <div class="my-4 w-full">
     <div class="w-full flex items-center space-x-8">
-      <ULink v-for="item in appNav" :key="item.link" :to="item.link" active-class="c-text-base font-semibold" inactive-class="c-text-muted" class="flex cursor-pointer lg:text-lg items-center font-medium  hover:c-text-base transition duration-300">
+      <ULink v-for="item in appNav" :key="item.link" :to="item.link" active-class="c-text-base font-semibold" inactive-class="c-text-muted" class="flex cursor-pointer items-center font-medium hover:c-text-base transition duration-300 lg:text-lg">
         {{ item.label }}
       </ULink>
     </div>

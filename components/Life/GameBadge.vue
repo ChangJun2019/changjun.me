@@ -16,7 +16,7 @@ const d = computed(() => {
 </script>
 
 <template>
-  <div :class="d.class" class="inline-flex items-center justify-center text-xs font-semibold  px-1 py-0.5 rounded-sm">
+  <div :class="d.class" class="inline-flex items-center justify-center rounded-sm px-1 py-0.5 text-xs font-semibold">
     <span :class="d.icon" class="mr-1" />
     <span>{{ platform }}</span>
   </div>

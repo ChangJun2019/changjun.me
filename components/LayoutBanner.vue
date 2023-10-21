@@ -8,7 +8,7 @@ const pageType = defineProp<PageType>('type', { default: 'blog', required: true 
   <div class="items-center lg:flex">
     <div class="w-full lg:w-1/2">
       <AppNav />
-      <div class="lg:max-w-prose prose mt-8">
+      <div class="mt-8 prose lg:max-w-prose">
         <h1 class="c-text-base">
           What do I want to write
         </h1>

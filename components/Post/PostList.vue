@@ -17,28 +17,28 @@ const formatDate = computed(() => {
 </script>
 
 <template>
-  <div class="grid mt-8 gap-8 sm:grid-cols-2 2xl:grid-cols-3 ">
+  <div class="grid mt-8 gap-8 2xl:grid-cols-3 sm:grid-cols-2">
     <NuxtLink
       v-for="post in postList"
       :key="post._id"
       :to="post._path"
       target="_black"
-      class="overflow-hidden rounded-lg border c-border-base bg-base cursor-pointer"
+      class="cursor-pointer overflow-hidden border c-border-base rounded-lg bg-base"
     >
-      <img :src="post.image?.src || ''" loading="lazy" class="h-42 xl:h-56 w-full object-cover dark:opacity-80">
-      <div class="px-4 py-4 sm:px-6 flex flex-col">
+      <img :src="post.image?.src || ''" loading="lazy" class="h-42 w-full object-cover xl:h-56 dark:opacity-80">
+      <div class="flex flex-col px-4 py-4 sm:px-6">
         <div class="text-sm text-primary dark:opacity-80">
           {{ post.tag }}
         </div>
-        <h3 class="font-semibold text-base mt-2">
+        <h3 class="mt-2 text-base font-semibold">
           {{ post.title }}
         </h3>
 
-        <p class="mt-2 line-clamp-2 text-sm/relaxed c-text-muted">
+        <p class="line-clamp-2 mt-2 text-sm/relaxed c-text-muted">
           {{ post.description }}
         </p>
 
-        <p class="text-secondary text-sm mt-2 opacity-70">
+        <p class="mt-2 text-sm text-secondary opacity-70">
           {{ formatDate(post.date) }}
         </p>
       </div>

@@ -7,7 +7,7 @@
       <div class="gap-12 xl:flex">
         <div class="max-w-prose">
           <AppNav />
-          <main class="prose prose-slate dark:prose-invert tracking-wide">
+          <main class="tracking-wide prose prose-slate dark:prose-invert">
             <slot />
           </main>
         </div>
