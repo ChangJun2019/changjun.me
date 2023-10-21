@@ -4,7 +4,7 @@ title: 了不起的 Vue3
 date: 2021-11-11
 tag: Vue
 image:
-  src: /images/0-cover-amazing-vue3.png
+  src: /images/0-cover-2021-amazing-vue3.png
   alt: blog cover
 ---
 

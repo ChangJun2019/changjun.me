@@ -4,7 +4,7 @@ title: 2023 我的生产力工具
 date: 2023-10-16
 tag: Share
 image:
-  src: /images/0-cover-my-mac-setup.webp
+  src: /images/0-cover-2023-my-mac-setup.webp
   alt: A cup of dirty coffee and MacBook Pro
 ---
 
