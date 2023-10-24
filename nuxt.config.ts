@@ -36,8 +36,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@unocss/nuxt',
     '@vueuse/nuxt',
-    '@nuxt/ui',
     'dayjs-nuxt',
+    '@nuxt/ui',
     'nuxt-directus',
     '@nuxt/devtools',
   ],
@@ -82,9 +82,7 @@ export default defineNuxtConfig({
   },
 
   dayjs: {
-    locales: ['en', 'zh-cn'],
-    plugins: ['relativeTime', 'updateLocale'],
-    defaultLocale: 'zh-cn',
+    plugins: ['relativeTime'],
   },
 
 })
