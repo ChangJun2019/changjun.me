@@ -17,6 +17,10 @@ export default defineNuxtConfig({
     },
   },
 
+  experimental: {
+    inlineSSRStyles: false,
+  },
+
   // https://devtools.nuxt.com/guide/getting-started
   devtools: { enabled: true },
 
@@ -43,7 +47,6 @@ export default defineNuxtConfig({
   ],
 
   css: [
-    '@unocss/reset/tailwind.css',
     '@/style/var.css',
     '@/style/global.css',
   ],
