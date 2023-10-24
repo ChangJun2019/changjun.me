@@ -5,13 +5,14 @@ import type { CustomFrontMatter } from '@/types/markdown'
 type PostType = CustomFrontMatter & MarkdownParsedContent
 
 const { data: postList } = await useAsyncData('postList', () => queryContent<PostType>('posts').sort({ date: -1 }).find())
+const dayjs = useDayjs()
 
 const formatDate = computed(() => {
   return function (time: any) {
-    if (useDayjs().diff(useDayjs(time), 'year') >= 1)
-      return useDayjs(time).format('YYYY年M月D日')
+    if (dayjs().diff(dayjs(time), 'year') >= 1)
+      return dayjs(time).format('YYYY 年 M 月 D 日')
     else
-      return useDayjs(time).fromNow()
+      return dayjs(time).fromNow()
   }
 })
 </script>

@@ -7,6 +7,9 @@ const {
 } = await useAsyncData<Video[]>('Videos', () =>
   getItems({
     collection: 'Videos',
+    params: {
+      sort: '-date_created',
+    },
   }))
 </script>
 

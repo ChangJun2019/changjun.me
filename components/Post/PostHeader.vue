@@ -1,8 +1,9 @@
 <script setup lang="ts">
 const { page } = useContent()
 const { image, title, tag, date } = unref(page)
+const dayjs = useDayjs()
 const d = computed(() => {
-  return useDayjs(date).format('YYYY年M月D日')
+  return dayjs(date).format('YYYY 年 M 月 D 日')
 })
 </script>
 

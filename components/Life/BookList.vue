@@ -7,6 +7,9 @@ const {
 } = await useAsyncData<Book[]>('Books', () =>
   getItems({
     collection: 'Books',
+    params: {
+      sort: '-readingTime',
+    },
   }))
 </script>
 
