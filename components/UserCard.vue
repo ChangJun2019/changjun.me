@@ -4,7 +4,7 @@ import { MY_LINKS as userLinks } from '@/constants/profile'
 
 <template>
   <div class="max-w-xs flex transform cursor-pointer items-center gap-6 rounded-xl p-3">
-    <img class="aspect-square h-26 w-26 rounded-full object-cover hover:animate-rotate-in" src="https://file.52chinaweb.com/user/avatar.jpeg" alt="avatar">
+    <img class="aspect-square h-26 w-26 rounded-full object-cover hover:animate-rotate-in" src="/images/blog-home-my-avatar.webp" alt="avatar">
 
     <div class="flex flex-col">
       <h1 class="mt-4 text-2xl font-semibold capitalize">
