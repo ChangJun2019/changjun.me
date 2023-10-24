@@ -2,12 +2,12 @@
 
 <template>
   <AppLayout>
-    <main class="container mx-auto max-w-prose px-6 py-4 lg:py-8 lg:px-0">
+    <main class="mx-auto max-w-prose px-6 py-4 container lg:px-0 lg:py-8">
       <PostHeader />
-      <main class="prose prose-slate dark:prose-invert tracking-wide">
+      <main class="tracking-wide prose prose-slate dark:prose-invert">
         <slot />
 
-        <UButton to="/blog" variant="outline" class="mt-6 not-prose">
+        <UButton to="/blog" variant="outline" class="not-prose mt-6">
           Go Back
         </UButton>
 

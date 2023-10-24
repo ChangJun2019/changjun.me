@@ -4,7 +4,7 @@ title: 了不起的 Vue3
 date: 2021-11-11
 tag: Vue
 image:
-  src: /images/0-cover-amazing-vue3.png
+  src: /images/0-cover-2021-amazing-vue3.png
   alt: blog cover
 ---
 
@@ -12,7 +12,7 @@ image:
 
 据 [@Evan You](https://github.com/yyx990803) 所说，当新的 Vue3 文档完成后，会对 [vue](https://www.npmjs.com/package/vue) npm 包的最新版本进行变更。
 
-2022年2月7日，Vue3已经是新的默认版本。
+2022 年 2 月 7 日，Vue3 已经是新的默认版本。
 
 当我们运行  `npm install vue`  现在默认安装 Vue3。
 
@@ -23,7 +23,7 @@ image:
 
 ## Vue3 新文档
 
-2021 年 12 月 25 日，[@Evan You](https://github.com/yyx990803) 在其推特公布了新的[Vue3 文档](https://staging.vuejs.org/)。目前新的文档中某些部分还未完成（90%已完成），最终发布可能会在 2022 年 1 月中旬。
+2021 年 12 月 25 日，[@Evan You](https://github.com/yyx990803) 在其推特公布了新的[Vue3 文档](https://staging.vuejs.org/)。目前新的文档中某些部分还未完成（90% 已完成），最终发布可能会在 2022 年 1 月中旬。
 
 新的文档采用了 [VitePress](https://github.com/vuejs/vitepress)，源码在 [Vue docs](https://github.com/vuejs/docs/tree/next)。
 
@@ -35,7 +35,7 @@ image:
 
 **更小的体积**：引入 `tree-shaking`，减少打包体积
 
-**更好的性能**：数据劫持优化（`Object.defineProperty 到 Proxy `）和编译优化(Block tree patchFlags 和静态提升)
+**更好的性能**：数据劫持优化（`Object.defineProperty 到 Proxy `）和编译优化 (Block tree patchFlags 和静态提升)
 
 **最佳的开发体验**：`Composition API` （优化逻辑组织和复用）和源码使用 `Typescrip` 更好的类型支持
 
@@ -57,7 +57,7 @@ image:
 
 `<script setup>` 是在单文件组件 (SFC) 中使用 [组合式 API](https://v3.cn.vuejs.org/api/composition-api.html) 的编译时语法糖。如果还不知道如何使用可以查看 [官方文档](https://v3.cn.vuejs.org/api/sfc-script-setup.html#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95)，在这里 [在线体验](https://sfc.vuejs.org/) 体验和查看编译后的内容。
 
-可以结合 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) 按需导入组件和 [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) 自动导入API插件获得更好的开发体验。
+可以结合 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) 按需导入组件和 [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) 自动导入 API 插件获得更好的开发体验。
 
 ### style v-bind
 ```vue
@@ -96,7 +96,7 @@ function useMouse() {
 ```
 [Ref sugar RFC](https://github.com/vuejs/rfcs/discussions/369)
 
-### setup props 解构(实验性)
+### setup props 解构 (实验性)
 
 ```ts
 interface ScriptSetupProps {
@@ -129,21 +129,21 @@ PC 端：
 
 ### pinia 下一代状态管理库
 
-[pinia](https://pinia.esm.dev/introduction.html) 是一个 Vue 的极轻量的状态管理库，它依赖于新的响应式系统（ reactivity ）和 composition api构建，最近受到了很多的关注，作者也是 Vue 的团队成员。它有着一下优点：
+[pinia](https://pinia.esm.dev/introduction.html) 是一个 Vue 的极轻量的状态管理库，它依赖于新的响应式系统（reactivity）和 composition api 构建，最近受到了很多的关注，作者也是 Vue 的团队成员。它有着一下优点：
 
 - 完整的 TypeScript 支持
-- API设计非常友好，使用足够简单。（接近 [Vuex 5 RFC](https://github.com/vuejs/rfcs/discussions/270)）
+- API 设计非常友好，使用足够简单。（接近 [Vuex 5 RFC](https://github.com/vuejs/rfcs/discussions/270)）
 - 模块化设计，支持代码自动拆分。
 - 支持 Vue devtools
 - 极轻量（1kb 左右）
 
-pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者能够容易迁移到 Vuex，未来和 Vuex 融合。详情可以查看 [Comparison with Vuex](https://pinia.esm.dev/introduction.html#comparison-with-vuex)  (Evan You也说了 pinia 是事实上的 Vuex5)
+pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者能够容易迁移到 Vuex，未来和 Vuex 融合。详情可以查看 [Comparison with Vuex](https://pinia.esm.dev/introduction.html#comparison-with-vuex)  (Evan You 也说了 pinia 是事实上的 Vuex5)
 
 ### 其它
 
 - [Nuxt 3 beta](https://github.com/nuxt/framework)
 - [vitesse](https://github.com/antfu/vitesse) vue3 vite Starter Template
-- [Vue vben admin](https://github.com/anncwb/vue-vben-admin) 基于Vue3, vite and TypeScript的后台管理模板
+- [Vue vben admin](https://github.com/anncwb/vue-vben-admin) 基于 Vue3, vite and TypeScript 的后台管理模板
 - [vueuse](https://github.com/vueuse/vueuse) 适用于 Vue2 和 Vue3 可组合的函数库
 - [vue-demi](https://github.com/vueuse/vue-demi) 为 Vue2 和 Vue3 创建通用库
 
@@ -165,9 +165,9 @@ pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者
 
 ![Vue 插件功能标注](/images/1-vue-devtools.png)
 
-[Chrome 安装Beta](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg)
+[Chrome 安装 Beta](https://chrome.google.com/webstore/detail/vuejs-devtools/ljjemllljcmogpfapbkkighbhhppjdbg)
 
-如果有安装稳定版的话，先禁用，以免产生冲突。如果你发现开发者工具当中并没有 Vue 选项，建议你刷新页面并重新打开 devtools 。
+如果有安装稳定版的话，先禁用，以免产生冲突。如果你发现开发者工具当中并没有 Vue 选项，建议你刷新页面并重新打开 devtools。
 
 ## 辅助工具
 
@@ -180,7 +180,7 @@ pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者
 
 容易复用、可以灵活组合、更好的上下文支持、更好的类型支持、逻辑组织不再分散 
 
-强烈推荐可以学习和使用同时支持 2 和 3 的 [vueuse](https://github.com/vueuse/vueuse) 组合式 API 工具包 。
+强烈推荐可以学习和使用同时支持 2 和 3 的 [vueuse](https://github.com/vueuse/vueuse) 组合式 API 工具包。
 
 ## 组件数据通信
 
@@ -191,10 +191,10 @@ pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者
 - 组件 props 传递 (父传子)
 - $emit 触发自定义事件 (子传父)
 - 使用 ref (父使用子的实例)
-- EventBus （兄弟）
-- attrs 与 listeners （祖先传子孙）
-- Provide 与 Inject （祖先传后代）
-- Vuex （跨组件和集中式存储）
+- EventBus（兄弟）
+- attrs 与 listeners（祖先传子孙）
+- Provide 与 Inject（祖先传后代）
+- Vuex（跨组件和集中式存储）
 
 这里主要提及一下可以代替 Vuex 的 `provide / Inject` (依赖注入)。（你会在 vue-router-next 和 pinia 的源码中看到它）
 
@@ -210,7 +210,7 @@ inject(key)
 
 原理（源码在`packages/runtime-core/src/apiInject.ts`）：
 
-子组件继承父组件的 `provides` 属性，因此可以一层一层的访问，其中 `provide` 方法是写入 `key-value` 到当前实例上的 `provides` 如果 key 存在就覆盖(因此如果有重命名的 key 访问的是最近的) `inject` 是从当前实例上的 `provides` 获取 `key`
+子组件继承父组件的 `provides` 属性，因此可以一层一层的访问，其中 `provide` 方法是写入 `key-value` 到当前实例上的 `provides` 如果 key 存在就覆盖 (因此如果有重命名的 key 访问的是最近的) `inject` 是从当前实例上的 `provides` 获取 `key`
 
 ## 生命周期
 
@@ -255,7 +255,7 @@ app.mount('#app')
 ```javascript
 // vue-next-master/packages/runtime-dom/src/index.ts
 const createApp = (...args)=>{
-  // 如果你仅使用了reactivity响应式，
+  // 如果你仅使用了 reactivity 响应式，
   // 没有显示的调用 createApp 那么渲染器代码将不会被打包
   const app = ensureRenderer().createApp(...args)
   app.mount = (containerOrSelector)=> {}
@@ -310,7 +310,7 @@ const mount = (containerOrSelector)=>{
   // 挂载前清空 html
   container.innerHTML = ''
   // 执行组件的挂载
-  // 参数依次是容器，isHydate， 是否是 svg
+  // 参数依次是容器，isHydate，是否是 svg
   return mount(container, false, container instanceof SVGElement)
 }
 ```
@@ -337,7 +337,7 @@ const mount = (containerOrSelector)=>{
 3. 进入 `patch`, 由于 vnode 类型是组件，所以进入处理组件的方法 `processComponent`
 4. 进入 `mountComponent` 开始挂载组件，创建组件实例，设置组件实例，运行带副作用的渲染函数
 5. 进入 `setupRenderEffect`, 渲染生成子树 vnode
-6. 再次进入 `patch` 挂载子树 vnode ，由于类型是 DOM 元素
+6. 再次进入 `patch` 挂载子树 vnode，由于类型是 DOM 元素
 7. 进入 `processElement` 处理 DOM 元素，进入 `mountElement`，创建元素节点，子元素是数组，进入`mountChildren`，遍历子节点 `pach` 挂载到父节点上。
 8. 进入 `hostInsert` 将创建的节点插入到 `#app` 上。
 
@@ -432,7 +432,7 @@ const mountElement = ()=>{
 }
 
 const mountChildren = () => {
-  // for 循环子项再进行 patch挂载
+  // for 循环子项再进行 patch 挂载
   for(){
     patch()
   }
@@ -473,7 +473,7 @@ const setupRenderEffect= ()=> {
       const prevTree = instance.subTree
       // 更新子树 vnode
       instance.subTree = nextTree
-      // 组件更新 进行新旧子树patch
+      // 组件更新 进行新旧子树 patch
       patch(
         prevTree,
         nextTree,
@@ -517,7 +517,7 @@ const updateComponent = (n1,n2,optimized) => {
 ### 调试 computed 3.2+
 
 ```javascript
-// computed可以调试，仅在开发模式下生效
+// computed 可以调试，仅在开发模式下生效
 const getCount = computed(() => count.value + 1, {
   onTrack(e) {
     // 当 count.value 作为依赖被追踪时触发
@@ -557,7 +557,7 @@ export function createPinia(): Pinia {
 	...
 }
 
-// 定义dispose 用于删除 store 停止相关的副作用 以及清空订阅（devtools停止显示）
+// 定义 dispose 用于删除 store 停止相关的副作用 以及清空订阅（devtools 停止显示）
 function $dispose() {
 	scope.stop()
 	subscriptions = []
@@ -571,7 +571,7 @@ function $dispose() {
 
 当我们通过 `<template></template>` 来书写组件结构时候，Vue 会将其编译成组件的 `render` 函数，你可以通过 [模板导出工具](https://vue-next-template-explorer.netlify.app/) 在线查看编译后的结果。
 
-模板编译大致会经历三个过程，解析 template 到 AST、转换 AST、生成代码。你可以在这里 [AST导出工具](https://astexplorer.net/) 查看AST结构。
+模板编译大致会经历三个过程，解析 template 到 AST、转换 AST、生成代码。你可以在这里 [AST 导出工具](https://astexplorer.net/) 查看 AST 结构。
 
 ### 模板编译的流程
 

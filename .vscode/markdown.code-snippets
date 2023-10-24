@@ -1,0 +1,48 @@
+{
+	"blog markdown header": {
+		"scope": "markdown",
+		"prefix": "mdh",
+		"body": [
+			"---",
+			"layout: content",
+			"title: $1",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"tag: $2",
+			"image:",
+			"  src: /images/$3",
+			"  alt: $4",
+			"---"
+		],
+		"description": "blog markdown header"
+	},
+
+	"blog markdown image": {
+		"prefix": "mdig",
+		"scope": "markdown",
+		"body": [
+			"![$2]($1)"
+		],
+		"description": "blog markdown image"
+	},
+
+	"blog markdown link": {
+		"prefix": "mdlk",
+		"scope": "markdown",
+		"body": [
+			"[$1]($2)"
+		],
+		"description": "blog markdown link"
+	},
+
+	"blog markdown code": {
+		"prefix": "mdcode",
+		"body": [
+			"```$1",
+			"$2",
+			"```"
+		],
+		"description": "blog markdown code"
+	}
+
+
+}
