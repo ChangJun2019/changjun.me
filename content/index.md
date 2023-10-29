@@ -1,5 +1,5 @@
 ---
-title: Chang Jun
+title: Chang Jun' Blog 我爱前端
 layout: home
 ---
 
