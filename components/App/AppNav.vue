@@ -14,9 +14,15 @@ const appNav = computed(() => {
 <template>
   <div class="my-4 w-full">
     <div class="w-full flex items-center space-x-8">
-      <ULink v-for="item in appNav" :key="item.link" :to="item.link" active-class="c-text-base font-semibold" inactive-class="c-text-muted" class="flex cursor-pointer items-center font-medium hover:c-text-base transition duration-300 lg:text-lg">
+      <NuxtLink
+        v-for="item in appNav"
+        :key="item.link"
+        :to="item.link"
+        class="flex cursor-pointer items-center hover:c-text-base transition duration-300 lg:text-lg"
+        :class="route.path === item.link ? 'c-text-base font-semibold' : 'c-text-muted font-medium'"
+      >
         {{ item.label }}
-      </ULink>
+      </NuxtLink>
     </div>
   </div>
 </template>
