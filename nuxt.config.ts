@@ -41,12 +41,13 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     'dayjs-nuxt',
-    '@nuxt/ui',
     'nuxt-directus',
     '@nuxt/devtools',
+    '@nuxtjs/color-mode',
   ],
 
   css: [
+    '@unocss/reset/tailwind.css',
     '@/style/var.css',
     '@/style/global.css',
   ],
