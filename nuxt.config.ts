@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/feed.xml', '/feed.json', '/feed.atom'],
+      routes: ['/feed.xml', '/feed.json', '/feed.atom', '/life'],
     },
   },
 
