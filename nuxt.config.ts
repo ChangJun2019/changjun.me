@@ -1,5 +1,6 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+import { isDevelopment, isProduction } from 'std-env'
 
+// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 
   components: [
@@ -70,6 +71,7 @@ export default defineNuxtConfig({
 
   // https://content.nuxtjs.org/api/configuration
   content: {
+    ignores: [isProduction ? '/dev-' : ''],
 
     markdown: {
       anchorLinks: false,

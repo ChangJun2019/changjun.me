@@ -91,6 +91,9 @@ devDependencies:
   simple-git-hooks:
     specifier: ^2.9.0
     version: 2.9.0
+  std-env:
+    specifier: ^3.4.3
+    version: 3.4.3
   typescript:
     specifier: ^5.2.2
     version: 5.2.2
