@@ -44,6 +44,7 @@ export default defineNuxtConfig({
     'nuxt-directus',
     '@nuxt/devtools',
     '@nuxtjs/color-mode',
+    "@nuxt/image"
   ],
 
   css: [
