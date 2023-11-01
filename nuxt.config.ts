@@ -22,7 +22,13 @@ export default defineNuxtConfig({
   },
 
   // https://devtools.nuxt.com/guide/getting-started
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
 
   devServer: {
     host: '0.0.0.0',
@@ -44,7 +50,7 @@ export default defineNuxtConfig({
     'nuxt-directus',
     '@nuxt/devtools',
     '@nuxtjs/color-mode',
-    "@nuxt/image"
+    '@nuxt/image',
   ],
 
   css: [
@@ -88,6 +94,12 @@ export default defineNuxtConfig({
 
   dayjs: {
     plugins: ['relativeTime'],
+  },
+
+  app: {
+    head: {
+      viewport: 'width=device-width,initial-scale=1,viewport-fit=cover',
+    },
   },
 
 })

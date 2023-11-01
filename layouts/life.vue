@@ -1,4 +1,27 @@
 <script setup lang="ts">
+const appConfig = useRuntimeConfig()
+const head = {
+  title: '关于我的读书、游戏和观影',
+  description: '记录和分享我的读书、游戏、和观影，数据由 Directus 管理',
+  image: 'https://52chinaweb.com/images/blog-share-card.png',
+}
+
+const { title, description, image } = head
+
+useSeoMeta({
+  author: 'Jun',
+  title,
+  ogTitle: title,
+  ogType: 'website',
+  ogUrl: appConfig.public.siteUrl,
+  description,
+  ogDescription: description,
+  ogImage: image,
+  twitterImage: image,
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>

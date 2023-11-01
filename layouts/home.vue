@@ -1,4 +1,27 @@
 <script setup lang="ts">
+const appConfig = useRuntimeConfig()
+const head = {
+  title: 'ChangJun\'s Blog',
+  description: 'This is my personal website where I document and share my learning, technology, life, and personal reflections.',
+  image: 'https://52chinaweb.com/images/blog-share-card.png',
+}
+
+const { title, description, image } = head
+
+useSeoMeta({
+  author: 'Jun',
+  title,
+  ogTitle: title,
+  ogType: 'website',
+  ogUrl: appConfig.public.siteUrl,
+  description,
+  ogDescription: description,
+  ogImage: image,
+  twitterImage: image,
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterCard: 'summary_large_image',
+})
 </script>
 
 <template>
