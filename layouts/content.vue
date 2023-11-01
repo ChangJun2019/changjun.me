@@ -1,4 +1,23 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { page } = useContent()
+const appConfig = useRuntimeConfig()
+const { title, description, image, _path } = page.value
+const host = appConfig.public.siteUrl
+const path = host + _path
+const img = host + image.src
+useSeoMeta({
+  title,
+  ogTitle: title,
+  ogUrl: path,
+  description,
+  ogDescription: description,
+  ogImage: img,
+  twitterImage: img,
+  twitterTitle: title,
+  twitterDescription: description,
+  twitterCard: 'summary_large_image',
+})
+</script>
 
 <template>
   <AppLayout>
