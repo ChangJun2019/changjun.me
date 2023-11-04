@@ -78,7 +78,7 @@ export default defineNuxtConfig({
     },
 
     navigation: {
-      fields: ['title', 'date', 'cover', 'tag', 'description'],
+      fields: ['title', 'date', 'image', 'tag', 'description'],
     },
 
     documentDriven: {
