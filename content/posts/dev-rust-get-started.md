@@ -31,6 +31,10 @@ Rust 是由 Mozilla 主导开发的系统编程语言，具有安全编程、高
 Rust 最早是 Graydon Hoare 的个人项目，后由 Mozilla 接手，现由 Rust 基金会管理。2015 年 Rust 1.0.0 发布，截止到目前，Rust 共有三个版本，分别是 Rust 2015、2018、2021。Rust 每 6 周发布一个迭代版本，每 2 - 3 年发布一个新的大版本。Rust 有三个发布渠道：stable、beta、nightly
 
 Rust 基金会是一个独立的非盈利性组织，由 AWS、Google、HUAWEI、Meta、Microsoft 组成，主要负责管理 Rust 编程语言以及生态。
+
+## Why Rust
+
+- 
  
 ## 有用的链接
 
@@ -38,10 +42,5 @@ Rust 基金会是一个独立的非盈利性组织，由 AWS、Google、HUAWEI�
 - Cargo 官方手册：https://doc.rust-lang.org/cargo/ 
 - Rust 基金会：https://foundation.rust-lang.org
 - Rust 版本指南：https://doc.rust-lang.org/edition-guide/introduction.html
-
-
-
-
-
 
 
