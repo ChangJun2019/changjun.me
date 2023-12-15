@@ -5,7 +5,7 @@ date: 2023-11-01
 tag: Rust
 image:
   src: /images/
-  alt: 
+  alt:
 ---
 
 ## 环境配置
@@ -34,13 +34,11 @@ Rust 基金会是一个独立的非盈利性组织，由 AWS、Google、HUAWEI�
 
 ## Why Rust
 
-- 
- 
+-
+
 ## 有用的链接
 
 - RustRover IDE: https://www.jetbrains.com/rust/
-- Cargo 官方手册：https://doc.rust-lang.org/cargo/ 
+- Cargo 官方手册：https://doc.rust-lang.org/cargo/
 - Rust 基金会：https://foundation.rust-lang.org
 - Rust 版本指南：https://doc.rust-lang.org/edition-guide/introduction.html
-
-

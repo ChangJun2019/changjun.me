@@ -15,7 +15,7 @@ const d = computed(() => {
     <div class="mt-4 text-sm text-primary/60">
       {{ tag }}
     </div>
-    <div class="mt-1 text-sm tracking-wide text-secondary opacity-70">
+    <div class="mt-1 text-sm text-secondary tracking-wide opacity-70">
       {{ d }}
     </div>
     <h1 class="mt-4 text-3xl font-extrabold leading-tight tracking-wide xl:text-4xl">

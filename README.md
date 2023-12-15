@@ -22,4 +22,4 @@ Excellent programs were used including, but not limited to, the following.
 
 code is licensed under [MIT](https://github.com/ChangJun2019/my-blog/blob/main/LICENSE)
 
-words and images are licensed under [CC BY-NC-SA 4.0](https://github.com/ChangJun2019/my-blog/blob/main/CC-BY-NC-4.0) 
+words and images are licensed under [CC BY-NC-SA 4.0](https://github.com/ChangJun2019/my-blog/blob/main/CC-BY-NC-4.0)

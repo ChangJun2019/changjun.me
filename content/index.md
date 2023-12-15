@@ -3,7 +3,7 @@ title: Chang Jun' Blog 我爱前端
 layout: home
 ---
 
-## シ 常常少年 
+## シ 常常少年
 
 > 笑一个吧 功成名就不是目的 让自己快乐快乐这才叫做意义
 
@@ -18,4 +18,3 @@ layout: home
 🌈 「 Life is never easy,but life always finds a way. 」
 
 🌟 希望这里会对你有些许的帮助。
-

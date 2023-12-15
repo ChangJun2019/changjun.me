@@ -15,7 +15,7 @@ const {
 
 <template>
   <section>
-    <h3 id="Book" class="my-4 text-lg font-semibold c-text-muted">
+    <h3 id="Book" class="my-4 text-lg c-text-muted font-semibold">
       图书
     </h3>
     <div class="w-full flex overflow-x-auto py-2 space-x-2" scrollbar="~ rounded track-color-transparent thumb-color-bg-muted">

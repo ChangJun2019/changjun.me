@@ -14,12 +14,12 @@ image:
 
 2022 年 2 月 7 日，Vue3 已经是新的默认版本。
 
-当我们运行  `npm install vue`  现在默认安装 Vue3。
+当我们运行 `npm install vue` 现在默认安装 Vue3。
 
 可能有两个地方需要注意（指定好安装版本）：
 
 - 当通过 CDN 链接使用 Vue 时。
-- 当在 ` package.json `中使用 `latest` 标签安装 Vue 时。
+- 当在 `package.json`中使用 `latest` 标签安装 Vue 时。
 
 ## Vue3 新文档
 
@@ -29,7 +29,7 @@ image:
 
 新的文档有了：新的设计、对示例代码提供了 Composition API / Options API 切换、更好的解释、对新手更友好、更好的使用/学习建议等等。
 
-你可以从文档中获取关于 Vue3 的一切，相信你肯定会有收获。 
+你可以从文档中获取关于 Vue3 的一切，相信你肯定会有收获。
 
 ## Vue3 的优势？
 
@@ -60,6 +60,7 @@ image:
 可以结合 [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) 按需导入组件和 [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) 自动导入 API 插件获得更好的开发体验。
 
 ### style v-bind
+
 ```vue
 <script setup lang="ts">
 const theme = {
@@ -73,7 +74,7 @@ const theme = {
 
 <style scoped>
 /* 实际的值会编译成 hash + 变量名 CSS 自定义属性，以内联的方式应用到组件根元素上 */
-p{
+p {
   color: v-bind('theme.color');
 }
 </style>
@@ -94,6 +95,7 @@ function useMouse() {
   })
 }
 ```
+
 [Ref sugar RFC](https://github.com/vuejs/rfcs/discussions/369)
 
 ### setup props 解构 (实验性)
@@ -110,17 +112,19 @@ const { name = 'Mr.Chang', age = 18 } = defineProps<ScriptSetupProps>()
 ```
 
 [查看更多 RFC](https://github.com/vuejs/vue-next/pull/4690)
-	
+
 ## 你可能会用到的周边库
 
 ### Vue3 的组件库
 
 PC 端：
+
 - [Ant Design of Vue](https://next.antdv.com/docs/vue/introduce-cn)
 - [element-plus](https://element-plus.gitee.io/zh-CN/guide/installation.html)
-- [Arco Design Vue](https://arco.design/vue/docs/start) 
+- [Arco Design Vue](https://arco.design/vue/docs/start)
 
 移动端：
+
 - [Vant](https://youzan.github.io/vant/v3/#/zh-CN)
 - [NutUI](https://nutui.jd.com/#/intro)
 - [Ionic](https://ionicframework.com/docs/vue/overview)
@@ -137,7 +141,7 @@ PC 端：
 - 支持 Vue devtools
 - 极轻量（1kb 左右）
 
-pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者能够容易迁移到 Vuex，未来和 Vuex 融合。详情可以查看 [Comparison with Vuex](https://pinia.esm.dev/introduction.html#comparison-with-vuex)  (Evan You 也说了 pinia 是事实上的 Vuex5)
+pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者能够容易迁移到 Vuex，未来和 Vuex 融合。详情可以查看 [Comparison with Vuex](https://pinia.esm.dev/introduction.html#comparison-with-vuex) (Evan You 也说了 pinia 是事实上的 Vuex5)
 
 ### 其它
 
@@ -151,8 +155,8 @@ pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者
 
 ### 迁移指南和工具
 
- 1. [官方迁移指南](https://v3.cn.vuejs.org/guide/migration/introduction.html#%E6%A6%82%E8%A7%88)
- 2. [GoGoCode](https://gogocode.io/zh)阿里开源的一个迁移工具。
+1.  [官方迁移指南](https://v3.cn.vuejs.org/guide/migration/introduction.html#%E6%A6%82%E8%A7%88)
+2.  [GoGoCode](https://gogocode.io/zh)阿里开源的一个迁移工具。
 
 ### 仍然使用 Vue2
 
@@ -161,7 +165,7 @@ pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者
 
 2.7 将会是 Vue2 的最后一个小版本。
 
-## Vue devtools 
+## Vue devtools
 
 ![Vue 插件功能标注](/images/1-vue-devtools.png)
 
@@ -178,13 +182,13 @@ pinia 的作者声明，pinia 并不是为了替代 Vuex，它旨在让开发者
 
 以 `setup` 函数作为入口，提供了一系列的响应式的 API、生命周期，使得不依赖 options API 就可以开发一个组件。**可以将同一个功能逻辑组合在一起，不再分散，使代码有更好的可维护和复用性**
 
-容易复用、可以灵活组合、更好的上下文支持、更好的类型支持、逻辑组织不再分散 
+容易复用、可以灵活组合、更好的上下文支持、更好的类型支持、逻辑组织不再分散
 
 强烈推荐可以学习和使用同时支持 2 和 3 的 [vueuse](https://github.com/vueuse/vueuse) 组合式 API 工具包。
 
 ## 组件数据通信
 
-组件通信的情况大概有这么几种情况 父与子 | 兄弟之间 | 祖孙与后代 | 啥关系没有 
+组件通信的情况大概有这么几种情况 父与子 | 兄弟之间 | 祖孙与后代 | 啥关系没有
 
 那么 Vue 组件通信的方法有这么几种：
 
@@ -227,10 +231,9 @@ inject(key)
 `v-memo` 是 3.2 新增的一个指令，跟 `v-once` 类似，不同的是 `v-once` 后停止后续的更新，`v-memo` 会有条件的停止部分模板的后续更新。
 
 ```html
-// 接收一个数组，如果数组中的每个值和上次渲染时候相同，则整个该子树的更新会被跳过。
-<div v-memo="[valueA, valueB]">
-  ...
-</div>
+//
+接收一个数组，如果数组中的每个值和上次渲染时候相同，则整个该子树的更新会被跳过。
+<div v-memo="[valueA, valueB]">...</div>
 ```
 
 ## 深入组件
@@ -390,12 +393,12 @@ const mountComponent = ()=>{
   setupComponent(instance)
   // 设置带副作用的渲染函数
   setupRenderEffect(
-    instance, 
-    initialVNode, 
-    container, 
-    anchor, 
-    parentSuspense, 
-    isSVG, 
+    instance,
+    initialVNode,
+    container,
+    anchor,
+    parentSuspense,
+    isSVG,
     optimized
   )
 }
@@ -459,7 +462,7 @@ const setupRenderEffect= ()=> {
     }else{
       // 更新组件
       let { next, bu, u, parent, vnode } = instance
-      // next：新的组件 vnode 
+      // next：新的组件 vnode
       if (next) {
         next.el = vnode.el
         // 更新组件 vnode 信息
@@ -502,7 +505,6 @@ const updateComponent = (n1,n2,optimized) => {
 }
 
 ```
-
 
 ## 响应式系统
 
@@ -552,17 +554,17 @@ count.value++
 
 ```javascript
 export function createPinia(): Pinia {
-	// 创建一个副作用作用域对象 detached: true 分离模式 不会被父的副作用作用域收集
-	const scope = effectScope(true)
-	...
+  // 创建一个副作用作用域对象 detached: true 分离模式 不会被父的副作用作用域收集
+  const scope = effectScope(true)
+  ...
 }
 
 // 定义 dispose 用于删除 store 停止相关的副作用 以及清空订阅（devtools 停止显示）
 function $dispose() {
-	scope.stop()
-	subscriptions = []
-	actionSubscriptions = []
-	pinia._s.delete($id)
+  scope.stop()
+  subscriptions = []
+  actionSubscriptions = []
+  pinia._s.delete($id)
 }
 
 ```
@@ -593,12 +595,8 @@ function $dispose() {
 
 `shapFlags` (packages/shared/src/shapeFlags.ts) 顾名思义，其实就是元素的类型定义。例如元素、函数组件、插槽等。
 
-
 ## 写在最后的
 
 谢谢你读到这里，如果你对这篇文有一些建议/指正，欢迎你告诉我。如果觉着可以，点个赞/转发。
 
 愿此时的你能够开心，下次见！💖
-
-
-

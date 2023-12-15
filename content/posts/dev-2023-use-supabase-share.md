@@ -5,7 +5,7 @@ date: 2023-10-21
 tag: Supabase
 image:
   src: /images/0-cover-2023-supabase-get-started.png
-  alt: 
+  alt:
 ---
 
 Supabase 是一个 BaaS（后端即服务）开源平台，它基于 PostgresSQL，提供了一系列工具和服务，帮助你简化构建安全且可扩展的后端。
