@@ -127,7 +127,7 @@ brew install google-chrome-dev --cask
 
 从 Warp 发布之后我就将其作为我的默认终端了，这个基于 Rust 的终端给我的感觉就是简洁、迅速、便利、智能。
 
-如果你感兴趣，可以看一下这篇文章：[Warp：是时候改变你的命令行工具了](https://sspai.com/post/79262) 
+如果你感兴趣，可以看一下这篇文章：[Warp：是时候改变你的命令行工具了](https://sspai.com/post/79262)
 
 通过 Oh My ZSH 管理 zsh 的插件，Starship 来做自定义提示。
 
@@ -144,7 +144,7 @@ brew install starship
 # starship setup shell
 eval "$(starship init zsh)"
 
-# fix warp terminal 
+# fix warp terminal
 if [[ $TERM_PROGRAM == "WarpTerminal" ]]; then
 export STARSHIP_CONFIG=/Users/xx/.config/warp_starship.toml
 fi
@@ -205,7 +205,7 @@ corepack prepare pnpm@latest --activate
 
 ### Python 环境设置
 
-[pyenv](https://github.com/pyenv/pyenv#homebrew-in-macos) 是一个 Python 版本管理工具，[pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv#installing-with-homebrew-for-macos-users)  是一个用于管理虚拟环境的 pyenv 插件。
+[pyenv](https://github.com/pyenv/pyenv#homebrew-in-macos) 是一个 Python 版本管理工具，[pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv#installing-with-homebrew-for-macos-users) 是一个用于管理虚拟环境的 pyenv 插件。
 
 通过 Homebrew 安装 pyenv 和 pyenv-virtualenv
 
@@ -222,6 +222,7 @@ eval "$(pyenv init -)"
 brew install pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)" # add ~/.zshrc
 ```
+
 pyenv 和 pyenv-virtualenv 常用命令
 
 ```bash
@@ -254,6 +255,3 @@ pyenv activate ven312
 ## 总结
 
 在这篇博客中我主要介绍了我的生产力工具，我使用的软件、我的开发环境设置和我部署的云服务。对于我自己而言，我非常喜欢折腾这些工具。「工欲善其事，必先利其器」。非常感谢那些优秀的软件开发人员，感谢开源世界，因为他们的存在，才会有这么棒的生产力工具。
-
-
-

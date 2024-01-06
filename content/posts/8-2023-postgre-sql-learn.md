@@ -5,7 +5,7 @@ date: 2023-10-22
 tag: SQL
 image:
   src: /images/0-cover-2023-postgres-sql-learn.png
-  alt: 
+  alt:
 ---
 
 PostgreSQL 是一个流行的、稳定的、功能强大的开源数据库系统。始于 1986 年，加州大学伯克利计算机科学系。拥有超过 35 年的开发经验，支持 SQL（关系）/ JSON（非关系）查询。最新版本为 [PostgreSQL 16](https://www.postgresql.org/about/news/postgresql-16-released-2715/)
@@ -19,8 +19,9 @@ PostgreSQL 是一个流行的、稳定的、功能强大的开源数据库系统
 通过 Homebrew 安装：
 
 ```bash
-brew install --cask orbstack 
+brew install --cask orbstack
 ```
+
 OrbStack 开箱即用，打开之后我们就可以直接在终端通过 `docker` 来启动 PostgreSQL。
 
 ```bash
@@ -66,7 +67,6 @@ docker exec -it local-postgres psql -U cj -c "create database test"
 
 如果你跟我一样使用 Warp，那么你可以创建一个 `workflows` 来简化这个过程。
 
-
 ## PostgreSQL Tutorial
 
 [PostgreSQL Tutorial](https://www.postgresqltutorial.com) 是一个用来学习入门的 PostgreSQL 在线网站。它基于一个事例数据库来进行讲解，下载数据库后将其导入到 pgAdmin 中，然后跟着教程一步一步来学习。
@@ -86,7 +86,6 @@ A：在文件输入框中手动输入文件路径，然后点击导入即可。
 - 在应用程序代码中执行 SQL 语句时，为了数据库和应用程序性能应尽量避免使用 `SELECT *`，而是应该指定需要的列。
 - 使用 `NULLS FIRST` 或者 `NULLS LAST` 选项显示的指定 NULL 值和非 NULL 值的排序
 - SELECT `DISTINCT` 用于从结果中删除重复的记录
-
 
 ## 几个对与学习 PostgreSQL 有用的网站
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const platform = defineProp<'Switch' | 'PS5'>('platform', { required: true })
+const platform = defineProp<string>('platform', { required: true })
 const PLATFORM_DATA = {
   Switch: {
     class: 'bg-Switch',
@@ -11,7 +11,7 @@ const PLATFORM_DATA = {
   },
 }
 const d = computed(() => {
-  return PLATFORM_DATA[platform.value]
+  return PLATFORM_DATA[platform.value as keyof typeof PLATFORM_DATA]
 })
 </script>
 

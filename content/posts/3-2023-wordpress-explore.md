@@ -22,6 +22,7 @@ image:
   "herd": "1.2.2"
 }
 ```
+
 ## WordPress
 
 印象中最早想要制作博客的时候，首先进入眼帘的就是 WordPress，不过在我那个时候已经有很多 SSG（VuePress、Hexo）框架了，你书写 Markdown，它们负责将你写的 Markdown 文件转换成静态 HTML 文件。
@@ -40,7 +41,7 @@ WordPress，创造发布于 2003 年，至今仍然是世界上热门流行的�
 
 ## Sage
 
-[Sage](https://github.com/roots/sage) 是一个 WordPress  starter theme，使用 [Laravel Blade](https://laravel.com/docs/master/blade) 、[Bud](https://bud.js.org/) 、[Tailwind CSS](https://tailwindcss.com/)。其中 Laravel Blade 是一个模版引擎，Bug 是前端构建工具，Tailwind CSS 是 utility-first 的 CSS 框架。简单来说是一个现代化的 WordPress theme 开发模版。
+[Sage](https://github.com/roots/sage) 是一个 WordPress starter theme，使用 [Laravel Blade](https://laravel.com/docs/master/blade) 、[Bud](https://bud.js.org/) 、[Tailwind CSS](https://tailwindcss.com/)。其中 Laravel Blade 是一个模版引擎，Bug 是前端构建工具，Tailwind CSS 是 utility-first 的 CSS 框架。简单来说是一个现代化的 WordPress theme 开发模版。
 
 [Roots](https://roots.io) 是一个现代的 WordPress 开发工具集合，Sage 也是由它们开发。
 
@@ -59,13 +60,3 @@ WordPress，创造发布于 2003 年，至今仍然是世界上热门流行的�
 ## 总结
 
 一次非常有趣的 WordPress 探索，从 WordPress 到 PHP 相关技术栈 Laravel，以及一些非常棒的工具，虽然最初我只是需要做 WordPress theme 的前端支持，但这无疑扩展了我的视野。非常感谢 Local、Herd 这样的工具诞生，它们解决了需要设置开发环境的负担，节省了我很多时间。
-
-
-
-
-
-
-
-
-
-

@@ -19,9 +19,10 @@ tag: Caddy
   "system": "macOS Sonoma 14.0 (23A344)"
 }
 ```
+
 ## Caddy 是什么
 
-[Caddy](https://github.com/caddyserver/caddy) 是一个 由 Go 语言编写的开源  web server，与 Nginx 不同的是，它默认开启 **HTTPS**。它还可以通过 [REST API](https://caddyserver.com/docs/api)  实时动态更新和导出配置，以及拥有更好的内存安全，没有 runtime dependencies 等特性。
+[Caddy](https://github.com/caddyserver/caddy) 是一个 由 Go 语言编写的开源 web server，与 Nginx 不同的是，它默认开启 **HTTPS**。它还可以通过 [REST API](https://caddyserver.com/docs/api) 实时动态更新和导出配置，以及拥有更好的内存安全，没有 runtime dependencies 等特性。
 
 当然最吸引我的一点是它的**配置足够简单**。
 
@@ -34,7 +35,7 @@ tag: Caddy
 1. 修改本机 hosts，将域名解析到 127.0.0.1
 2. 启动 Nginx 监听 80 端口
 3. 编写 nginx 配置，将域名转发到本地前端服务端口（3000 或者其它）
-4. 配置 SSL 
+4. 配置 SSL
 
 可以 [在这里](https://www.digitalocean.com/community/tools/nginx?domains.0.server.wwwSubdomain=true&domains.0.server.redirectSubdomains=false&domains.0.https.certType=custom&domains.0.php.php=false&domains.0.reverseProxy.reverseProxy=true&domains.0.routing.index=index.html&domains.0.routing.fallbackHtml=true&domains.0.routing.fallbackPhp=false&global.app.lang=zhCN) （可以在线生成 nginx 配置）查看上述生成的配置文件。
 
@@ -84,6 +85,7 @@ server {
 ```
 
 ## 通过 Caddy 反向代理
+
 [Caddyfile](https://caddyserver.com/docs/caddyfile) 是 Caddy 配置文件，在配置好本地域名解析后，使用 Caddy 实现转发仅仅只需要两行代码。
 
 ```bash
@@ -115,9 +117,9 @@ Nuxt 中有一个我很喜欢的小功能，当你要监听的 host 设置为 `0
 
 言归正传，当我们将 Nuxt 和 Caddy 启动之后，在控制台中会有错误生成。
 
-> Mixed Content: The page at 'https://test.domain.com/' was loaded over HTTPS, but attempted to connect to the insecure WebSocket endpoint 'ws://test.domain.com:24678/_nuxt/'. This request has been blocked; this endpoint must be available over WSS.
-> 
-> [vite] failed to connect to websocket (SecurityError: Failed to construct 'WebSocket': An insecure WebSocket connection may not be initiated from a page loaded over HTTPS.). 
+> Mixed Content: The page at 'https://test.domain.com/' was loaded over HTTPS, but attempted to connect to the insecure WebSocket endpoint 'ws://test.domain.com:24678/\_nuxt/'. This request has been blocked; this endpoint must be available over WSS.
+>
+> [vite] failed to connect to websocket (SecurityError: Failed to construct 'WebSocket': An insecure WebSocket connection may not be initiated from a page loaded over HTTPS.).
 
 错误是说开启了 HTTPS 之后我们的 Vite HMR 连接 WebSocket 协议错误。我们可以通过查看 [Vite HMR option](https://vitejs.dev/config/server-options.html#server-hmr) 后，增加如下配置。
 
@@ -139,9 +141,9 @@ export default defineNuxtConfig({
 })
 ```
 
-其中 `clientPort: 443` 是将客户端的 WebSocket 请求到 Caddy  上， `protocol` 设置要请求的 WebSocket 的协议为 wss（https）。这样做的目的是将客户端的 WebSocket 请求变成 https。如果此时重新启动 Nuxt，会发现页面一直在重载，那是因为还未对 Caddy 进行处理。
+其中 `clientPort: 443` 是将客户端的 WebSocket 请求到 Caddy 上， `protocol` 设置要请求的 WebSocket 的协议为 wss（https）。这样做的目的是将客户端的 WebSocket 请求变成 https。如果此时重新启动 Nuxt，会发现页面一直在重载，那是因为还未对 Caddy 进行处理。
 
-接下需要修改一下 Caddy 配置，设置匹配规则，匹配 WebSocket 请求，将其转发到 Vite HMR  Server 端口 24678。（[Vite HMR 默认端口](https://github.com/vitejs/vite/blob/ca34c64b1dc6e898495d655f89c300dd14758121/packages/vite/src/node/server/ws.ts#L115)）
+接下需要修改一下 Caddy 配置，设置匹配规则，匹配 WebSocket 请求，将其转发到 Vite HMR Server 端口 24678。（[Vite HMR 默认端口](https://github.com/vitejs/vite/blob/ca34c64b1dc6e898495d655f89c300dd14758121/packages/vite/src/node/server/ws.ts#L115)）
 
 ```php
 test.domain.com
@@ -158,25 +160,8 @@ reverse_proxy :3000
 
 ## 后续
 
-在我对项目依赖进行升级后，发现升级后的 **Nuxt 3.7.4** 版本已经不再需要设置 Vite  HMR，Caddy 也无需再对 WebSocket 进行转发，一切默认运行正常。
+在我对项目依赖进行升级后，发现升级后的 **Nuxt 3.7.4** 版本已经不再需要设置 Vite HMR，Caddy 也无需再对 WebSocket 进行转发，一切默认运行正常。
 
-运行 `npx taze major -w`  升级项目依赖到最新的稳定版本，并写入到 package.json 中。[taze](https://github.com/antfu/taze) 是一个现代化的命令行工具，用于升级项目依赖。
+运行 `npx taze major -w` 升级项目依赖到最新的稳定版本，并写入到 package.json 中。[taze](https://github.com/antfu/taze) 是一个现代化的命令行工具，用于升级项目依赖。
 
 运行 `npx nuxi upgrade` 来升级 Nuxt 的版本。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -5,24 +5,24 @@
 </template>
 
 <style scoped>
-.animate-bobble-sm-opacity{
+.animate-bobble-sm-opacity {
   animation: 3s ease infinite bobble-sm-opacity;
 }
 
 @keyframes bobble-sm-opacity {
   0% {
-      opacity: 1;
-      transform: translateY(-2px) rotate(0deg)
+    opacity: 1;
+    transform: translateY(-2px) rotate(0deg);
   }
 
   50% {
-      opacity: 0.5;
-      transform: translateY(3px) rotate(0deg)
+    opacity: 0.5;
+    transform: translateY(3px) rotate(0deg);
   }
 
   to {
-      opacity: 1;
-      transform: translateY(-2px) rotate(0deg)
+    opacity: 1;
+    transform: translateY(-2px) rotate(0deg);
   }
 }
 </style>

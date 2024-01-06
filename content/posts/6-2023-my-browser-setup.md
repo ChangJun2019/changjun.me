@@ -35,7 +35,7 @@ Arc 浏览器横空出世后，优秀的视觉效果、垂直标签栏、多 Spa
 
 回过头来看，我心中的浏览器是什么样子呢？我希望浏览器能做到的是：
 
-- 对于 Web 应用有更好的支持，包括但不限于性能。我更喜欢在网页中使用 Figma、Gmail 
+- 对于 Web 应用有更好的支持，包括但不限于性能。我更喜欢在网页中使用 Figma、Gmail
 - 简洁一致的设计，舒适的交互效果。
 - 优秀的开发者体验
 - 足够安全
@@ -80,28 +80,18 @@ Arc 浏览器横空出世后，优秀的视觉效果、垂直标签栏、多 Spa
 
 在 Chrome Dev 中我安装的插件会更加针对开发：
 
-1. Vue/React DevTools 
+1. Vue/React DevTools
 2. [Start - A Clean New Tab](https://chrome.google.com/webstore/detail/start-a-clean-new-tab/dlofaadadkacecikehaefpgdahbgdmen) ，我写了一个扩展来去除 Chrome New Tab 默认元素，同时支持设置背景图片。
 3. File Icons for GitHub and GitLab 浏览 GitHub 文件图标修改插件。
 4. uBlock Origin 广告过滤插件
 5. 篡改猴
 6. I don't care about cookies，移除 cookie 弹窗。
 7. JSON Formatter，JSON 美化工具
-9. History & Cache Cleaner - Smart Clean 
-10. Refined GitHub
+8. History & Cache Cleaner - Smart Clean
+9. Refined GitHub
 
 ## 总结
 
 以上就是我对于浏览器使用的分享，Chrome 毫无疑问仍然是我的开发浏览器，日常使用浏览器由 Arc 切换到了 Safari。
 
 无论使用什么浏览器，都是为了提高效率，作为一名 Web 开发者，我衷心的希望浏览器的发展越来越好，出现越来越多优秀的 Web 应用。
-
-
-
-
-
-
-
-
-  
-

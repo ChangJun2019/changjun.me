@@ -1,5 +1,6 @@
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
+import { isProduction } from 'std-env'
 
+// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
 
   components: [
@@ -11,14 +12,7 @@ export default defineNuxtConfig({
     // https://github.com/harlan-zw/nuxt-simple-sitemap#set-site-url-required-when-prerendering
     public: {
       siteUrl: 'https://52chinaweb.com',
-      directus: {
-        token: '',
-      },
     },
-  },
-
-  experimental: {
-    inlineSSRStyles: false,
   },
 
   // https://devtools.nuxt.com/guide/getting-started
@@ -47,7 +41,6 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     'dayjs-nuxt',
-    'nuxt-directus',
     '@nuxt/devtools',
     '@nuxtjs/color-mode',
     '@nuxt/image',
@@ -70,13 +63,14 @@ export default defineNuxtConfig({
 
   // https://content.nuxtjs.org/api/configuration
   content: {
+    ignores: [isProduction ? '/dev-' : ''],
 
     markdown: {
       anchorLinks: false,
     },
 
     navigation: {
-      fields: ['title', 'date', 'cover', 'tag', 'description'],
+      fields: ['title', 'date', 'image', 'tag', 'description'],
     },
 
     documentDriven: {

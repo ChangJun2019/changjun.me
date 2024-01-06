@@ -1,23 +1,17 @@
 <script setup lang="ts">
-import type { Game } from '@/types/life'
+import Games from '@/assets/data/Games.json'
 
-const { getItems } = useDirectusItems()
-const {
-  data: games,
-} = await useAsyncData<Game[]>('Games', () =>
-  getItems({
-    collection: 'Games',
-  }))
+const gameList = Games
 </script>
 
 <template>
   <section>
-    <h3 id="Game" class="my-4 text-lg font-semibold c-text-muted">
+    <h3 id="Game" class="my-4 text-lg c-text-muted font-semibold">
       游戏
     </h3>
     <div class="grid w-full gap-8 sm:grid-cols-2">
       <div
-        v-for="game in games"
+        v-for="game in gameList"
         :key="game.id"
         class="overflow-hidden border c-border-base rounded-lg bg-base shadow-sm"
       >
@@ -28,7 +22,7 @@ const {
         >
 
         <div class="p-4 sm:px-6 sm:py-4">
-          <h3 class="line-clamp-2 min-h-12 font-semibold c-text-base">
+          <h3 class="line-clamp-2 min-h-12 c-text-base font-semibold">
             {{ game.name }}
           </h3>
 
@@ -38,7 +32,7 @@ const {
         </div>
         <div class="flex px-3 pb-3 space-x-4 sm:px-6 sm:pb-4">
           <GameBadge :platform="game.platform" />
-          <div v-if="game.duration" class="inline-flex items-center justify-center rounded-sm c-bg-primary px-1 py-0.5 text-xs font-semibold c-text-primary">
+          <div v-if="game.duration" class="inline-flex items-center justify-center rounded-sm c-bg-primary px-1 py-0.5 text-xs c-text-primary font-semibold">
             {{ game.duration }}
           </div>
         </div>

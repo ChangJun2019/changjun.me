@@ -1,25 +1,25 @@
 :root {
-  --c-bg-base: rgba(255,255,255);
-  --c-bg-primary: #18181B;
-  --c-bg-muted: #F4F4F5;
-  --c-text-muted: #71717A;
-  --c-text-primary: #FAFAFA;
-  --c-border-base: #E4E4E7;
+  --c-bg-base: rgba(255, 255, 255);
+  --c-bg-primary: #18181b;
+  --c-bg-muted: #f4f4f5;
+  --c-text-muted: #71717a;
+  --c-text-primary: #fafafa;
+  --c-border-base: #e4e4e7;
   --c-text-base: #09090b;
-  --c-text-secondary: #71717A;
-  --c-bg-code: #F4F4F5;
-  --c-pre-bg-code: #0e0e0e: #ffffff
+  --c-text-secondary: #71717a;
+  --c-bg-code: #f4f4f5;
+  --c-pre-bg-code: #0e0e0e: #ffffff;
 }
 
-.dark{ 
-  --c-bg-base: rgba(9,9,11);
-  --c-border-base: #27272A;
+.dark {
+  --c-bg-base: rgba(9, 9, 11);
+  --c-border-base: #27272a;
   --c-text-base: #fafafa;
-  --c-text-secondary: #A1A1AA;
-  --c-bg-muted: #27272A;
-  --c-text-muted: #A1A1AA;
-  --c-bg-primary: #FAFAFA;
-  --c-text-primary: #18181B;
-  --c-bg-code: #27272A;
+  --c-text-secondary: #a1a1aa;
+  --c-bg-muted: #27272a;
+  --c-text-muted: #a1a1aa;
+  --c-bg-primary: #fafafa;
+  --c-text-primary: #18181b;
+  --c-bg-code: #27272a;
   --c-pre-bg-code: #0e0e0e;
 }
