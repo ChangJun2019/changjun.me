@@ -1,11 +1,11 @@
 name: auto deploy site
 
-# on:
-#   push:
-#     branches:
-#       - main
-#     paths-ignore:
-#       - README.md
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - README.md
 
 jobs:
   deploy:
@@ -13,30 +13,28 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 16
+          node-version: 18
 
       - uses: pnpm/action-setup@v2
         name: Install pnpm
-        id: pnpm-install
         with:
-          version: 7
+          version: 8
           run_install: false
 
       - name: Get pnpm store directory
-        id: pnpm-cache
         shell: bash
         run: |
-          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
 
       - uses: actions/cache@v3
         name: Setup pnpm cache
         with:
-          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          path: ${{ env.STORE_PATH }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
