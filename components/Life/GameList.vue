@@ -1,13 +1,7 @@
 <script setup lang="ts">
-import type { Game } from '@/types/life'
+import Games from '@/assets/data/Games.json'
 
-const { getItems } = useDirectusItems()
-const {
-  data: games,
-} = await useAsyncData<Game[]>('Games', () =>
-  getItems({
-    collection: 'Games',
-  }))
+const gameList = Games
 </script>
 
 <template>
@@ -17,7 +11,7 @@ const {
     </h3>
     <div class="grid w-full gap-8 sm:grid-cols-2">
       <div
-        v-for="game in games"
+        v-for="game in gameList"
         :key="game.id"
         class="overflow-hidden border c-border-base rounded-lg bg-base shadow-sm"
       >

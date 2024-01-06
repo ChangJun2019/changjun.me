@@ -12,14 +12,7 @@ export default defineNuxtConfig({
     // https://github.com/harlan-zw/nuxt-simple-sitemap#set-site-url-required-when-prerendering
     public: {
       siteUrl: 'https://52chinaweb.com',
-      directus: {
-        token: '',
-      },
     },
-  },
-
-  experimental: {
-    inlineSSRStyles: false,
   },
 
   // https://devtools.nuxt.com/guide/getting-started
@@ -48,7 +41,6 @@ export default defineNuxtConfig({
     '@unocss/nuxt',
     '@vueuse/nuxt',
     'dayjs-nuxt',
-    'nuxt-directus',
     '@nuxt/devtools',
     '@nuxtjs/color-mode',
     '@nuxt/image',
