@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "lint:md": "npx case-police \"**/*.md\" --fix",
-    "release": "bumpp --commit --tag --push"
+    "release": "npx bumpp --commit --tag --push"
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
