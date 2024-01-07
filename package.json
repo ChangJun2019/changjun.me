@@ -12,7 +12,8 @@
     "cleanup": "nlx nuxi@latest cleanup",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "lint:md": "npx case-police \"**/*.md\" --fix"
+    "lint:md": "npx case-police \"**/*.md\" --fix",
+    "release": "bumpp --commit --tag --push"
   },
   "dependencies": {
     "@vercel/analytics": "^1.1.1",
