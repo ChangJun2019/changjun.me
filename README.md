@@ -1,6 +1,6 @@
 # MY BLOG
 
-[52chinaweb.com](https://52chinaweb.com/)
+[changjun.me](https://www.changjun.me/)
 
 This is my personal website where I document and share my learning, technology, life, and personal reflections.
 
@@ -20,6 +20,6 @@ Excellent programs were used including, but not limited to, the following.
 
 ## License
 
-code is licensed under [MIT](https://github.com/ChangJun2019/my-blog/blob/main/LICENSE)
+code is licensed under [MIT](https://github.com/ChangJun2019/changjun.me/blob/main/LICENSE)
 
-words and images are licensed under [CC BY-NC-SA 4.0](https://github.com/ChangJun2019/my-blog/blob/main/CC-BY-NC-4.0)
+words and images are licensed under [CC BY-NC-SA 4.0](https://github.com/ChangJun2019/changjun.me/blob/main/CC-BY-NC-SA-4.0)
