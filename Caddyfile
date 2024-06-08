@@ -1,4 +1,3 @@
-dev.52chinaweb.com
+dev.changjun.me
 tls internal
 reverse_proxy :5809
-

@@ -9,7 +9,7 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 import { presetScrollbar } from 'unocss-preset-scrollbar'
-import { fontFamily } from '@unocss/preset-mini/dist/theme'
+import { fontFamily } from '@unocss/preset-mini/theme'
 import customTypography from './style/typography'
 
 export default defineConfig({
