@@ -1,5 +1,5 @@
 ---
-title: Chang Jun' Blog 我爱前端
+title: Jun Chang
 layout: home
 ---
 
