@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     // https://github.com/harlan-zw/nuxt-simple-sitemap#set-site-url-required-when-prerendering
     public: {
-      siteUrl: 'https://52chinaweb.com',
+      siteUrl: 'https://changjun.me',
     },
   },
 
